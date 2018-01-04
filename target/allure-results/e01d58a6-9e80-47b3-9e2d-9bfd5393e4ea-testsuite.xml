@@ -1,0 +1,1217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1515068866505" stop="1515070913824" version="1.4.16" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default suite : Default test</name>
+    <title>Default suite : Default test</title>
+    <test-cases>
+        <test-case start="1515068866497" stop="1515068866503" status="pending">
+            <name>staticBBAd_Validations</name>
+            <failure>
+                <message>Test not implemented yet</message>
+                <stack-trace>There are no stack trace</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515068866506" stop="1515068866506" status="pending">
+            <name>staticBBAd_Validations</name>
+            <failure>
+                <message>Test not implemented yet</message>
+                <stack-trace>There are no stack trace</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515069163793" stop="1515069204152" status="passed">
+            <name>Feed_1_Ad_Validation</name>
+            <steps>
+                <step start="1515068976484" stop="1515068976486" status="passed">
+                    <name>logStep[Verify bb ad call in Test mode]</name>
+                    <title>Verify bb ad call in Test mode</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515069163793" stop="1515069204152" status="passed">
+            <name>Feed_1_Ad_Validation</name>
+            <steps>
+                <step start="1515068976484" stop="1515068976486" status="passed">
+                    <name>logStep[Verify bb ad call in Test mode]</name>
+                    <title>Verify bb ad call in Test mode</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515069204163" stop="1515069326915" status="passed">
+            <name>Feed_2_Ad_VAlidation</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515069204163" stop="1515069326915" status="passed">
+            <name>Feed_2_Ad_VAlidation</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515069326922" stop="1515069380406" status="passed">
+            <name>Feed_3_Ad_Validation</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515069326922" stop="1515069380406" status="passed">
+            <name>Feed_3_Ad_Validation</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515069380413" stop="1515069422024" status="passed">
+            <name>Feed_4_Ad_VAlidation</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515069380413" stop="1515069422024" status="passed">
+            <name>Feed_4_Ad_VAlidation</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515069422031" stop="1515069451741" status="passed">
+            <name>Feed_5_Ad_Validation</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515069422031" stop="1515069451741" status="passed">
+            <name>Feed_5_Ad_Validation</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515069451747" stop="1515069666281" status="passed">
+            <name>HourlyPageAd_Validations</name>
+            <steps>
+                <step start="1515069469513" stop="1515069469513" status="passed">
+                    <name>logStep[Hourly ad verification started]</name>
+                    <title>Hourly ad verification started</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515069584112" stop="1515069584112" status="passed">
+                    <name>logStep[Module found  and navigating to detaile page]</name>
+                    <title>Module found  and navigating to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515069630132" stop="1515069630132" status="passed">
+                    <name>logStep[Navigated to detaile page]</name>
+                    <title>Navigated to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515069451747" stop="1515069666281" status="passed">
+            <name>HourlyPageAd_Validations</name>
+            <steps>
+                <step start="1515069469513" stop="1515069469513" status="passed">
+                    <name>logStep[Hourly ad verification started]</name>
+                    <title>Hourly ad verification started</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515069584112" stop="1515069584112" status="passed">
+                    <name>logStep[Module found  and navigating to detaile page]</name>
+                    <title>Module found  and navigating to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515069630132" stop="1515069630132" status="passed">
+                    <name>logStep[Navigated to detaile page]</name>
+                    <title>Navigated to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515069666623" stop="1515069775486" status="passed">
+            <name>DailyPageAd_Validations</name>
+            <steps>
+                <step start="1515069666624" stop="1515069666624" status="passed">
+                    <name>logStep[Daily ad verification started]</name>
+                    <title>Daily ad verification started</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515069727838" stop="1515069727838" status="passed">
+                    <name>logStep[Module found  and navigating to detaile page]</name>
+                    <title>Module found  and navigating to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515069746290" stop="1515069746290" status="passed">
+                    <name>logStep[Navigated to detaile page]</name>
+                    <title>Navigated to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515069666623" stop="1515069775486" status="passed">
+            <name>DailyPageAd_Validations</name>
+            <steps>
+                <step start="1515069666624" stop="1515069666624" status="passed">
+                    <name>logStep[Daily ad verification started]</name>
+                    <title>Daily ad verification started</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515069727838" stop="1515069727838" status="passed">
+                    <name>logStep[Module found  and navigating to detaile page]</name>
+                    <title>Module found  and navigating to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515069746290" stop="1515069746290" status="passed">
+                    <name>logStep[Navigated to detaile page]</name>
+                    <title>Navigated to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515069775493" stop="1515069850041" status="passed">
+            <name>MapPageAd_Validations</name>
+            <steps>
+                <step start="1515069775495" stop="1515069775495" status="passed">
+                    <name>logStep[Map ad verification started]</name>
+                    <title>Map ad verification started</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515069819023" stop="1515069819023" status="passed">
+                    <name>logStep[Module found  and navigating to detaile page]</name>
+                    <title>Module found  and navigating to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515069834532" stop="1515069834532" status="passed">
+                    <name>logStep[Navigated to detaile page]</name>
+                    <title>Navigated to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515069775493" stop="1515069850041" status="passed">
+            <name>MapPageAd_Validations</name>
+            <steps>
+                <step start="1515069775495" stop="1515069775495" status="passed">
+                    <name>logStep[Map ad verification started]</name>
+                    <title>Map ad verification started</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515069819023" stop="1515069819023" status="passed">
+                    <name>logStep[Module found  and navigating to detaile page]</name>
+                    <title>Module found  and navigating to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515069834532" stop="1515069834532" status="passed">
+                    <name>logStep[Navigated to detaile page]</name>
+                    <title>Navigated to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515069850049" stop="1515069945597" status="passed">
+            <name>NewsPageAd_Validations</name>
+            <steps>
+                <step start="1515069850050" stop="1515069850050" status="passed">
+                    <name>logStep[News ad verification started]</name>
+                    <title>News ad verification started</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515069908226" stop="1515069908226" status="passed">
+                    <name>logStep[Module found  and navigating to detaile page]</name>
+                    <title>Module found  and navigating to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515069917580" stop="1515069917580" status="passed">
+                    <name>logStep[Navigated to detaile page]</name>
+                    <title>Navigated to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515069850049" stop="1515069945597" status="passed">
+            <name>NewsPageAd_Validations</name>
+            <steps>
+                <step start="1515069850050" stop="1515069850050" status="passed">
+                    <name>logStep[News ad verification started]</name>
+                    <title>News ad verification started</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515069908226" stop="1515069908226" status="passed">
+                    <name>logStep[Module found  and navigating to detaile page]</name>
+                    <title>Module found  and navigating to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515069917580" stop="1515069917580" status="passed">
+                    <name>logStep[Navigated to detaile page]</name>
+                    <title>Navigated to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515069945603" stop="1515070313634" status="passed">
+            <name>HealthPage_cold_Flu_Ad_Validations</name>
+            <steps>
+                <step start="1515070008893" stop="1515070008893" status="passed">
+                    <name>logStep[Bridgeton, New Jersey address Selected]</name>
+                    <title>Bridgeton, New Jersey address Selected</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070253698" stop="1515070253698" status="passed">
+                    <name>logStep[Module found  and navigating to detaile page]</name>
+                    <title>Module found  and navigating to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070275918" stop="1515070275918" status="passed">
+                    <name>logStep[Navigated to detaile page]</name>
+                    <title>Navigated to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070302774" stop="1515070302774" status="passed">
+                    <name>logStep[Ad present on ExtendedLSModule(ColdAndFlu)page]</name>
+                    <title>Ad present on ExtendedLSModule(ColdAndFlu)page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070302775" stop="1515070302775" status="passed">
+                    <name>logStep[Ad sizes are matched]</name>
+                    <title>Ad sizes are matched</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515069945603" stop="1515070313634" status="passed">
+            <name>HealthPage_cold_Flu_Ad_Validations</name>
+            <steps>
+                <step start="1515070008893" stop="1515070008893" status="passed">
+                    <name>logStep[Bridgeton, New Jersey address Selected]</name>
+                    <title>Bridgeton, New Jersey address Selected</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070253698" stop="1515070253698" status="passed">
+                    <name>logStep[Module found  and navigating to detaile page]</name>
+                    <title>Module found  and navigating to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070275918" stop="1515070275918" status="passed">
+                    <name>logStep[Navigated to detaile page]</name>
+                    <title>Navigated to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070302774" stop="1515070302774" status="passed">
+                    <name>logStep[Ad present on ExtendedLSModule(ColdAndFlu)page]</name>
+                    <title>Ad present on ExtendedLSModule(ColdAndFlu)page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070302775" stop="1515070302775" status="passed">
+                    <name>logStep[Ad sizes are matched]</name>
+                    <title>Ad sizes are matched</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515070313774" stop="1515070401152" status="failed">
+            <name>HealthPage_Allergy_Ad_Validations</name>
+            <failure>
+                <message>AssertionError: Ad preset on LSModule(Allergy) Module,  but sizes are not matched</message>
+                <stack-trace>java.lang.AssertionError: Ad preset on LSModule(Allergy) Module,  but sizes are not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.Functions.Functions.Verify_Adpresenton_extendedPages(Functions.java:3309)
+	at com.Functions.ExecutableFunctions.Function_extened_LSModule_ads(ExecutableFunctions.java:381)
+	at com.Functions.AdMonitor_run.HealthPage_Allergy_Ad_Validations(AdMonitor_run.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1515070346484" stop="1515070346484" status="passed">
+                    <name>logStep[Module found  and navigating to detaile page]</name>
+                    <title>Module found  and navigating to detaile page</title>
+                </step>
+                <step start="1515070367466" stop="1515070367466" status="passed">
+                    <name>logStep[Navigated to detaile page]</name>
+                    <title>Navigated to detaile page</title>
+                </step>
+                <step start="1515070400450" stop="1515070400450" status="passed">
+                    <name>logStep[Ad present but sizes are not matched]</name>
+                    <title>Ad present but sizes are not matched</title>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515070313774" stop="1515070401152" status="failed">
+            <name>HealthPage_Allergy_Ad_Validations</name>
+            <failure>
+                <message>AssertionError: Ad preset on LSModule(Allergy) Module,  but sizes are not matched</message>
+                <stack-trace>java.lang.AssertionError: Ad preset on LSModule(Allergy) Module,  but sizes are not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.Functions.Functions.Verify_Adpresenton_extendedPages(Functions.java:3309)
+	at com.Functions.ExecutableFunctions.Function_extened_LSModule_ads(ExecutableFunctions.java:381)
+	at com.Functions.AdMonitor_run.HealthPage_Allergy_Ad_Validations(AdMonitor_run.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1515070346484" stop="1515070346484" status="passed">
+                    <name>logStep[Module found  and navigating to detaile page]</name>
+                    <title>Module found  and navigating to detaile page</title>
+                </step>
+                <step start="1515070367466" stop="1515070367466" status="passed">
+                    <name>logStep[Navigated to detaile page]</name>
+                    <title>Navigated to detaile page</title>
+                </step>
+                <step start="1515070400450" stop="1515070400450" status="passed">
+                    <name>logStep[Ad present but sizes are not matched]</name>
+                    <title>Ad present but sizes are not matched</title>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515070401160" stop="1515070476532" status="passed">
+            <name>HealthPage_Ski_Ad_Validations</name>
+            <steps>
+                <step start="1515070433098" stop="1515070433098" status="passed">
+                    <name>logStep[Module found  and navigating to detaile page]</name>
+                    <title>Module found  and navigating to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070453452" stop="1515070453452" status="passed">
+                    <name>logStep[Navigated to detaile page]</name>
+                    <title>Navigated to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070463611" stop="1515070463611" status="passed">
+                    <name>logStep[Ad present on ExtendedLSModule(Ski)page]</name>
+                    <title>Ad present on ExtendedLSModule(Ski)page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070463611" stop="1515070463611" status="passed">
+                    <name>logStep[Ad sizes are matched]</name>
+                    <title>Ad sizes are matched</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515070401160" stop="1515070476532" status="passed">
+            <name>HealthPage_Ski_Ad_Validations</name>
+            <steps>
+                <step start="1515070433098" stop="1515070433098" status="passed">
+                    <name>logStep[Module found  and navigating to detaile page]</name>
+                    <title>Module found  and navigating to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070453452" stop="1515070453452" status="passed">
+                    <name>logStep[Navigated to detaile page]</name>
+                    <title>Navigated to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070463611" stop="1515070463611" status="passed">
+                    <name>logStep[Ad present on ExtendedLSModule(Ski)page]</name>
+                    <title>Ad present on ExtendedLSModule(Ski)page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070463611" stop="1515070463611" status="passed">
+                    <name>logStep[Ad sizes are matched]</name>
+                    <title>Ad sizes are matched</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515070476538" stop="1515070636216" status="passed">
+            <name>HealthPage_Running_Ad_Validations</name>
+            <steps>
+                <step start="1515070507752" stop="1515070507752" status="passed">
+                    <name>logStep[Module found  and navigating to detaile page]</name>
+                    <title>Module found  and navigating to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070576505" stop="1515070576505" status="passed">
+                    <name>logStep[Navigated to detaile page]</name>
+                    <title>Navigated to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070619258" stop="1515070619258" status="passed">
+                    <name>logStep[Ad present on ExtendedLSModule(Running)page]</name>
+                    <title>Ad present on ExtendedLSModule(Running)page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070619258" stop="1515070619258" status="passed">
+                    <name>logStep[Ad sizes are matched]</name>
+                    <title>Ad sizes are matched</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515070476538" stop="1515070636216" status="passed">
+            <name>HealthPage_Running_Ad_Validations</name>
+            <steps>
+                <step start="1515070507752" stop="1515070507752" status="passed">
+                    <name>logStep[Module found  and navigating to detaile page]</name>
+                    <title>Module found  and navigating to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070576505" stop="1515070576505" status="passed">
+                    <name>logStep[Navigated to detaile page]</name>
+                    <title>Navigated to detaile page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070619258" stop="1515070619258" status="passed">
+                    <name>logStep[Ad present on ExtendedLSModule(Running)page]</name>
+                    <title>Ad present on ExtendedLSModule(Running)page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070619258" stop="1515070619258" status="passed">
+                    <name>logStep[Ad sizes are matched]</name>
+                    <title>Ad sizes are matched</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515070636451" stop="1515070705084" status="failed">
+            <name>HealthPage_Boat_Beach_Ad_Validations</name>
+            <failure>
+                <message>AssertionError: Ad not present on the LSModule(Boat&amp;Beach) detaile page</message>
+                <stack-trace>java.lang.AssertionError: Ad not present on the LSModule(Boat&amp;Beach) detaile page
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.Functions.Functions.Verify_Adpresenton_extendedPages(Functions.java:3208)
+	at com.Functions.ExecutableFunctions.Function_extened_LSModule_ads(ExecutableFunctions.java:381)
+	at com.Functions.AdMonitor_run.HealthPage_Boat_Beach_Ad_Validations(AdMonitor_run.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1515070668698" stop="1515070668698" status="passed">
+                    <name>logStep[Module found  and navigating to detaile page]</name>
+                    <title>Module found  and navigating to detaile page</title>
+                </step>
+                <step start="1515070689683" stop="1515070689683" status="passed">
+                    <name>logStep[Navigated to detaile page]</name>
+                    <title>Navigated to detaile page</title>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515070636451" stop="1515070705084" status="failed">
+            <name>HealthPage_Boat_Beach_Ad_Validations</name>
+            <failure>
+                <message>AssertionError: Ad not present on the LSModule(Boat&amp;Beach) detaile page</message>
+                <stack-trace>java.lang.AssertionError: Ad not present on the LSModule(Boat&amp;Beach) detaile page
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.Functions.Functions.Verify_Adpresenton_extendedPages(Functions.java:3208)
+	at com.Functions.ExecutableFunctions.Function_extened_LSModule_ads(ExecutableFunctions.java:381)
+	at com.Functions.AdMonitor_run.HealthPage_Boat_Beach_Ad_Validations(AdMonitor_run.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1515070668698" stop="1515070668698" status="passed">
+                    <name>logStep[Module found  and navigating to detaile page]</name>
+                    <title>Module found  and navigating to detaile page</title>
+                </step>
+                <step start="1515070689683" stop="1515070689683" status="passed">
+                    <name>logStep[Navigated to detaile page]</name>
+                    <title>Navigated to detaile page</title>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515070705091" stop="1515070724758" status="broken">
+            <name>NativAd_Validations</name>
+            <failure>
+                <message>NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11.61 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'Macminis-Mac-mini.local', ip: '192.168.1.24', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_151'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{appPackage=com.weather.TWC, noReset=true, clearSystemFiles=true, deviceName==iPhone (11.0.2) [065f96d70ace738cc0afb7bd7ca6fcb1ae716935], platform=MAC, appium-version=1.6.3, newCommandTimeout=100000.0, platformVersion=10.1.1, webStorageEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS, udid=065f96d70ace738cc0afb7bd7ca6fcb1ae716935, app=/Users/macmini/eclipse-workspace/iOS-arms/Build/v9.4.1-int-423947.ipa, networkConnectionEnabled=false, bundleId=com.weather.TWC, databaseEnabled=false, autoLaunch=true, forceIphone=true, locationContextEnabled=false, waitForAppScript=$.delay(5000); true, device=iPhone, autoAcceptAlerts=true}]
+Session ID: 8dfacdb1-3432-4f05-ade1-7f20df11b274
+*** Element info: {Using=xpath, value=//XCUIElementTypeButton[@name='topNav settings']}</message>
+                <stack-trace>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11.61 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'Macminis-Mac-mini.local', ip: '192.168.1.24', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_151'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{appPackage=com.weather.TWC, noReset=true, clearSystemFiles=true, deviceName==iPhone (11.0.2) [065f96d70ace738cc0afb7bd7ca6fcb1ae716935], platform=MAC, appium-version=1.6.3, newCommandTimeout=100000.0, platformVersion=10.1.1, webStorageEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS, udid=065f96d70ace738cc0afb7bd7ca6fcb1ae716935, app=/Users/macmini/eclipse-workspace/iOS-arms/Build/v9.4.1-int-423947.ipa, networkConnectionEnabled=false, bundleId=com.weather.TWC, databaseEnabled=false, autoLaunch=true, forceIphone=true, locationContextEnabled=false, waitForAppScript=$.delay(5000); true, device=iPhone, autoAcceptAlerts=true}]
+Session ID: 8dfacdb1-3432-4f05-ade1-7f20df11b274
+*** Element info: {Using=xpath, value=//XCUIElementTypeButton[@name='topNav settings']}
+	at sun.reflect.GeneratedConstructorAccessor79.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at com.Functions.Functions.Setappinto_TestMode(Functions.java:1090)
+	at com.Functions.AdMonitor_run.NativAd_Validations(AdMonitor_run.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1515070705092" stop="1515070705092" status="passed">
+                    <name>logStep[Verify bb ad call in Test mode]</name>
+                    <title>Verify bb ad call in Test mode</title>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515070705091" stop="1515070724758" status="broken">
+            <name>NativAd_Validations</name>
+            <failure>
+                <message>NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11.61 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'Macminis-Mac-mini.local', ip: '192.168.1.24', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_151'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{appPackage=com.weather.TWC, noReset=true, clearSystemFiles=true, deviceName==iPhone (11.0.2) [065f96d70ace738cc0afb7bd7ca6fcb1ae716935], platform=MAC, appium-version=1.6.3, newCommandTimeout=100000.0, platformVersion=10.1.1, webStorageEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS, udid=065f96d70ace738cc0afb7bd7ca6fcb1ae716935, app=/Users/macmini/eclipse-workspace/iOS-arms/Build/v9.4.1-int-423947.ipa, networkConnectionEnabled=false, bundleId=com.weather.TWC, databaseEnabled=false, autoLaunch=true, forceIphone=true, locationContextEnabled=false, waitForAppScript=$.delay(5000); true, device=iPhone, autoAcceptAlerts=true}]
+Session ID: 8dfacdb1-3432-4f05-ade1-7f20df11b274
+*** Element info: {Using=xpath, value=//XCUIElementTypeButton[@name='topNav settings']}</message>
+                <stack-trace>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11.61 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'Macminis-Mac-mini.local', ip: '192.168.1.24', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_151'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{appPackage=com.weather.TWC, noReset=true, clearSystemFiles=true, deviceName==iPhone (11.0.2) [065f96d70ace738cc0afb7bd7ca6fcb1ae716935], platform=MAC, appium-version=1.6.3, newCommandTimeout=100000.0, platformVersion=10.1.1, webStorageEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS, udid=065f96d70ace738cc0afb7bd7ca6fcb1ae716935, app=/Users/macmini/eclipse-workspace/iOS-arms/Build/v9.4.1-int-423947.ipa, networkConnectionEnabled=false, bundleId=com.weather.TWC, databaseEnabled=false, autoLaunch=true, forceIphone=true, locationContextEnabled=false, waitForAppScript=$.delay(5000); true, device=iPhone, autoAcceptAlerts=true}]
+Session ID: 8dfacdb1-3432-4f05-ade1-7f20df11b274
+*** Element info: {Using=xpath, value=//XCUIElementTypeButton[@name='topNav settings']}
+	at sun.reflect.GeneratedConstructorAccessor79.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at com.Functions.Functions.Setappinto_TestMode(Functions.java:1090)
+	at com.Functions.AdMonitor_run.NativAd_Validations(AdMonitor_run.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1515070705092" stop="1515070705092" status="passed">
+                    <name>logStep[Verify bb ad call in Test mode]</name>
+                    <title>Verify bb ad call in Test mode</title>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515070724761" stop="1515070744521" status="broken">
+            <name>NativBB_Validations</name>
+            <failure>
+                <message>NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11.57 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'Macminis-Mac-mini.local', ip: '192.168.1.24', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_151'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{appPackage=com.weather.TWC, noReset=true, clearSystemFiles=true, deviceName==iPhone (11.0.2) [065f96d70ace738cc0afb7bd7ca6fcb1ae716935], platform=MAC, appium-version=1.6.3, newCommandTimeout=100000.0, platformVersion=10.1.1, webStorageEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS, udid=065f96d70ace738cc0afb7bd7ca6fcb1ae716935, app=/Users/macmini/eclipse-workspace/iOS-arms/Build/v9.4.1-int-423947.ipa, networkConnectionEnabled=false, bundleId=com.weather.TWC, databaseEnabled=false, autoLaunch=true, forceIphone=true, locationContextEnabled=false, waitForAppScript=$.delay(5000); true, device=iPhone, autoAcceptAlerts=true}]
+Session ID: 8dfacdb1-3432-4f05-ade1-7f20df11b274
+*** Element info: {Using=xpath, value=//XCUIElementTypeButton[@name='topNav settings']}</message>
+                <stack-trace>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11.57 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'Macminis-Mac-mini.local', ip: '192.168.1.24', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_151'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{appPackage=com.weather.TWC, noReset=true, clearSystemFiles=true, deviceName==iPhone (11.0.2) [065f96d70ace738cc0afb7bd7ca6fcb1ae716935], platform=MAC, appium-version=1.6.3, newCommandTimeout=100000.0, platformVersion=10.1.1, webStorageEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS, udid=065f96d70ace738cc0afb7bd7ca6fcb1ae716935, app=/Users/macmini/eclipse-workspace/iOS-arms/Build/v9.4.1-int-423947.ipa, networkConnectionEnabled=false, bundleId=com.weather.TWC, databaseEnabled=false, autoLaunch=true, forceIphone=true, locationContextEnabled=false, waitForAppScript=$.delay(5000); true, device=iPhone, autoAcceptAlerts=true}]
+Session ID: 8dfacdb1-3432-4f05-ade1-7f20df11b274
+*** Element info: {Using=xpath, value=//XCUIElementTypeButton[@name='topNav settings']}
+	at sun.reflect.GeneratedConstructorAccessor79.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at com.Functions.Functions.Setappinto_TestMode(Functions.java:1090)
+	at com.Functions.AdMonitor_run.NativBB_Validations(AdMonitor_run.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1515070724762" stop="1515070724762" status="passed">
+                    <name>logStep[Verify bb ad call in Test mode]</name>
+                    <title>Verify bb ad call in Test mode</title>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515070724761" stop="1515070744521" status="broken">
+            <name>NativBB_Validations</name>
+            <failure>
+                <message>NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11.57 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'Macminis-Mac-mini.local', ip: '192.168.1.24', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_151'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{appPackage=com.weather.TWC, noReset=true, clearSystemFiles=true, deviceName==iPhone (11.0.2) [065f96d70ace738cc0afb7bd7ca6fcb1ae716935], platform=MAC, appium-version=1.6.3, newCommandTimeout=100000.0, platformVersion=10.1.1, webStorageEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS, udid=065f96d70ace738cc0afb7bd7ca6fcb1ae716935, app=/Users/macmini/eclipse-workspace/iOS-arms/Build/v9.4.1-int-423947.ipa, networkConnectionEnabled=false, bundleId=com.weather.TWC, databaseEnabled=false, autoLaunch=true, forceIphone=true, locationContextEnabled=false, waitForAppScript=$.delay(5000); true, device=iPhone, autoAcceptAlerts=true}]
+Session ID: 8dfacdb1-3432-4f05-ade1-7f20df11b274
+*** Element info: {Using=xpath, value=//XCUIElementTypeButton[@name='topNav settings']}</message>
+                <stack-trace>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11.57 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'Macminis-Mac-mini.local', ip: '192.168.1.24', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_151'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{appPackage=com.weather.TWC, noReset=true, clearSystemFiles=true, deviceName==iPhone (11.0.2) [065f96d70ace738cc0afb7bd7ca6fcb1ae716935], platform=MAC, appium-version=1.6.3, newCommandTimeout=100000.0, platformVersion=10.1.1, webStorageEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS, udid=065f96d70ace738cc0afb7bd7ca6fcb1ae716935, app=/Users/macmini/eclipse-workspace/iOS-arms/Build/v9.4.1-int-423947.ipa, networkConnectionEnabled=false, bundleId=com.weather.TWC, databaseEnabled=false, autoLaunch=true, forceIphone=true, locationContextEnabled=false, waitForAppScript=$.delay(5000); true, device=iPhone, autoAcceptAlerts=true}]
+Session ID: 8dfacdb1-3432-4f05-ade1-7f20df11b274
+*** Element info: {Using=xpath, value=//XCUIElementTypeButton[@name='topNav settings']}
+	at sun.reflect.GeneratedConstructorAccessor79.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at com.Functions.Functions.Setappinto_TestMode(Functions.java:1090)
+	at com.Functions.AdMonitor_run.NativBB_Validations(AdMonitor_run.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1515070724762" stop="1515070724762" status="passed">
+                    <name>logStep[Verify bb ad call in Test mode]</name>
+                    <title>Verify bb ad call in Test mode</title>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515070744524" stop="1515070830075" status="passed">
+            <name>NativanimatedBB_Validations</name>
+            <steps>
+                <step start="1515070744524" stop="1515070744524" status="passed">
+                    <name>logStep[native_animated_BBad verification started]</name>
+                    <title>native_animated_BBad verification started</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070812790" stop="1515070812790" status="passed">
+                    <name>logStep[Rainbow City, Alabama address Selected]</name>
+                    <title>Rainbow City, Alabama address Selected</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070829148" stop="1515070829148" status="passed">
+                    <name>logStep[native_animated_BBad present on the screen]</name>
+                    <title>native_animated_BBad present on the screen</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515070744524" stop="1515070830075" status="passed">
+            <name>NativanimatedBB_Validations</name>
+            <steps>
+                <step start="1515070744524" stop="1515070744524" status="passed">
+                    <name>logStep[native_animated_BBad verification started]</name>
+                    <title>native_animated_BBad verification started</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070812790" stop="1515070812790" status="passed">
+                    <name>logStep[Rainbow City, Alabama address Selected]</name>
+                    <title>Rainbow City, Alabama address Selected</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070829148" stop="1515070829148" status="passed">
+                    <name>logStep[native_animated_BBad present on the screen]</name>
+                    <title>native_animated_BBad present on the screen</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515070830081" stop="1515070899965" status="passed">
+            <name>animatedBBAd_Validations</name>
+            <steps>
+                <step start="1515070830082" stop="1515070830082" status="passed">
+                    <name>logStep[AnimatedBBad verification started]</name>
+                    <title>AnimatedBBad verification started</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070888193" stop="1515070888193" status="passed">
+                    <name>logStep[Dodson, Montana address Selected]</name>
+                    <title>Dodson, Montana address Selected</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070899278" stop="1515070899278" status="passed">
+                    <name>logStep[AnimatedBBad present on the screen]</name>
+                    <title>AnimatedBBad present on the screen</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1515070830081" stop="1515070899965" status="passed">
+            <name>animatedBBAd_Validations</name>
+            <steps>
+                <step start="1515070830082" stop="1515070830082" status="passed">
+                    <name>logStep[AnimatedBBad verification started]</name>
+                    <title>AnimatedBBad verification started</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070888193" stop="1515070888193" status="passed">
+                    <name>logStep[Dodson, Montana address Selected]</name>
+                    <title>Dodson, Montana address Selected</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1515070899278" stop="1515070899278" status="passed">
+                    <name>logStep[AnimatedBBad present on the screen]</name>
+                    <title>AnimatedBBad present on the screen</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Macminis-Mac-mini.local"/>
+                <label name="thread" value="2756@Macminis-Mac-mini.local.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

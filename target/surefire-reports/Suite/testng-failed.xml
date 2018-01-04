@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="com.Functions.AdMonitor_run"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.Functions.AdMonitor_run">
+        <methods>
+          <include name="HealthPage_Allergy_Ad_Validations"/>
+          <include name="animatedBBAd_Validations"/>
+          <include name="Feed_1_Ad_Validation"/>
+          <include name="Feed_5_Ad_Validation"/>
+          <include name="HealthPage_Boat_Beach_Ad_Validations"/>
+          <include name="HealthPage_Running_Ad_Validations"/>
+          <include name="Feed_2_Ad_VAlidation"/>
+          <include name="beforeTest"/>
+          <include name="HourlyPageAd_Validations"/>
+          <include name="Feed_4_Ad_VAlidation"/>
+          <include name="NativanimatedBB_Validations"/>
+          <include name="NewsPageAd_Validations"/>
+          <include name="HealthPage_cold_Flu_Ad_Validations"/>
+          <include name="MapPageAd_Validations"/>
+          <include name="NativAd_Validations"/>
+          <include name="NativBB_Validations"/>
+          <include name="Feed_3_Ad_Validation"/>
+          <include name="DailyPageAd_Validations"/>
+          <include name="HealthPage_Ski_Ad_Validations"/>
+        </methods>
+      </class> <!-- com.Functions.AdMonitor_run -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
