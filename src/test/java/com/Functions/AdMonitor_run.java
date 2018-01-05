@@ -103,16 +103,18 @@ public class AdMonitor_run extends Driver {
 		System.out.println("*********************** Started Validating Ls_Boat_Beach Detail page ads ****************");
 		ExecutableFunctions.Function_extened_LSModule_ads("LSModule(Boat&Beach)");
 	}
-	@Test(priority=15)
+	@Test(priority=15,enabled=false)
 	public static void NativAd_Validations()throws Exception{
 		System.out.println("*********************** Started Validating Native ad ****************");
+		Functions.Setappinto_TestMode("Select");
 		Functions.Setappinto_TestMode("nativeAd");
 		ExecutableFunctions.Function_validate_BB_ads("nativeAd");
 	}
 	@Test(priority=16)
 	public static void NativBB_Validations()throws Exception{
 		System.out.println("*********************** Started Validating Native BB ****************");
-		Functions.Setappinto_TestMode("nativeBB");
+		Functions.Setappinto_TestMode("Select");
+		//Functions.Setappinto_TestMode("nativeBB");
 		ExecutableFunctions.Function_validate_BB_ads("nativeBB");
 	}
 	@Test(priority=17)
@@ -124,11 +126,11 @@ public class AdMonitor_run extends Driver {
 	@Test(priority=18,enabled = false)
 	public static void staticBBAd_Validations()throws Exception{
 		System.out.println("*********************** Started Validating StaticBB ad ****************");
-		Functions.Setappinto_TestMode("Select");
+		//Functions.Setappinto_TestMode("Select");
 		ExecutableFunctions.Function_validate_BB_ads("StaticBB");
 	}
 	
-	@Test(priority=19)
+	@Test(priority=19,enabled = false)
 	public static void animatedBBAd_Validations()throws Exception{
 		System.out.println("*********************** Started Validating AnimatedBB ad ****************");
 		ExecutableFunctions.Function_validate_BB_ads("AnimatedBB");

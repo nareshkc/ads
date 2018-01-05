@@ -152,6 +152,7 @@ public class ExecutableFunctions extends Driver   {
 
 		}else if(BBType.equals("native_animated_BB")) {
 			Functions.enternewAddress("Rainbow City, Alabama");
+			Ad.swipe(181, 91, 3, 494, 2000);
 			try {
 				Thread.sleep(5000);
 				adPlace = wait.until(ExpectedConditions.visibilityOf(Ad.findElementByName("view_currentConditionsBrandedBGDContainerWeatherContainer")));

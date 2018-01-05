@@ -1171,7 +1171,7 @@ public class Functions extends Driver{
 				Ad.findElementByName("Done").click();
 			}
 		}else if(TestMode.equals("nativeBB")) {
-			clearAirlock();
+			//clearAirlock();
 			//Select Test Group
 
 			Ad.findElementByClassName("XCUIElementTypeSearchField").sendKeys("IOS-843-NativeBB");
@@ -3293,6 +3293,21 @@ public class Functions extends Driver{
 					System.out.println("Ad sizes are matched");
 					ScreenShot(Pagename,"Passed");
 				}else if(ActualSize.getHeight()+1 == y && ActualSize.getWidth()+1==x){
+
+					System.out.println("Ad present on Extended"+ Pagename +"page");
+					System.out.println("Ad sizes are matched");
+					ScreenShot(Pagename,"Passed");
+				}else if(ActualSize.getHeight() == y+1 && ActualSize.getWidth()==x){
+
+					System.out.println("Ad present on Extended"+ Pagename +"page");
+					System.out.println("Ad sizes are matched");
+					ScreenShot(Pagename,"Passed");
+				}else if(ActualSize.getHeight() == y && ActualSize.getWidth()==x+1){
+
+					System.out.println("Ad present on Extended"+ Pagename +"page");
+					System.out.println("Ad sizes are matched");
+					ScreenShot(Pagename,"Passed");
+				}else if(ActualSize.getHeight() == y+1 && ActualSize.getWidth()+1==x+1){
 
 					System.out.println("Ad present on Extended"+ Pagename +"page");
 					System.out.println("Ad sizes are matched");
