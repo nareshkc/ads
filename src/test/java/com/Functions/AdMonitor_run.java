@@ -34,7 +34,7 @@ public class AdMonitor_run extends Driver {
 		Functions.Feed_Ad_Validation(1);
 	}
 
-	@Test(priority=2)
+	/*@Test(priority=2)
 	public static void Feed_2_Ad_VAlidation() throws Exception{
 		Functions.Feed_Ad_Validation(2);
 	}
@@ -134,7 +134,7 @@ public class AdMonitor_run extends Driver {
 	public static void animatedBBAd_Validations()throws Exception{
 		System.out.println("*********************** Started Validating AnimatedBB ad ****************");
 		ExecutableFunctions.Function_validate_BB_ads("AnimatedBB");
-	}
+	}*/
 
 	@BeforeMethod
 	public void beforeMethod() {
