@@ -3142,7 +3142,7 @@ public class Functions extends Driver{
 			}
 
 			Functions.Navigate_extendedPages(Pagename);
-			if(Pagename.equals("LSModule(Allergy)")||Pagename.equals("LSModule(ColdAndFlu)")){
+			if(Pagename.equals("LSModule(Allergy)")||Pagename.equals("LSModule(ColdAndFlu)")||Pagename.equals("LSModule(Boat&Beach)")){
 				Functions.Swipe();
 				Functions.Swipe();				
 				System.out.println("Page scrolled for add");
