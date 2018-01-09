@@ -81,6 +81,7 @@ public class AdMonitor_run extends Driver {
 	public static void HealthPage_cold_Flu_Ad_Validations()throws Exception{
 		System.out.println("*********************** Started Validating LS_Cold and Flu Detail page ads ****************");
 		Functions.enternewAddress("Bridgeton, New Jersey");
+		Thread.sleep(8000); 
 		ExecutableFunctions.Function_extened_LSModule_ads("LSModule(ColdAndFlu)");
 	}
 	@Test(priority=11)
