@@ -161,7 +161,8 @@ public class Functions extends Driver{
 
 	//Stop Appium Server
 	public static  void stopAppiumServer() throws IOException {  
-		String[] command ={"/usr/bin/killall","-KILL","node"};  
+		//String[] command ={"/usr/bin/killall","-KILL","node"};  
+		String[] command = new String[]{"sh", "-c", "lsof -P | grep ':4727' | awk '{print $2}' | xargs kill -9"};
 		Runtime.getRuntime().exec(command);  
 		//System.out.println("Appium server stop");  
 	} 
@@ -405,14 +406,14 @@ public class Functions extends Driver{
 		//capabilities.setCapability("xcodeSigningId","iPhone Developer");
 		//capabilities.setCapability("locationServicesEnabled", false);
 		//capabilities.setCapability("realDeviceLogger", "/Users/vishal.pathania/node_modules/deviceconsole/deviceconsole");
-		//capabilities.setCapability("wdaLocalPort", "8200");	
+		capabilities.setCapability("wdaLocalPort", "8201");	
 		//capabilities.setCapability("locationServicesAuthorized", true);
 		capabilities.setCapability("waitForAppScript","$.delay(5000); true");
 		capabilities.setCapability("clearSystemFiles",true);
 		System.out.println("Reading capabilities done");
 		//Wait time for Execution of node.js
 		//Thread.sleep(10000);
-		Ad = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+		Ad = new IOSDriver(new URL("http://127.0.0.1:4727/wd/hub"), capabilities);
 		Ad.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		//Handle Extra popup appears when app launched (like New module ebnable)
 		Handle_onwanted_popups();
