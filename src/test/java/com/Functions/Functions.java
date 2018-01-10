@@ -400,7 +400,7 @@ public class Functions extends Driver{
 		capabilities.setCapability(readExcelValues.data[14][0], true);
 		capabilities.setCapability(readExcelValues.data[16][0], readExcelValues.data[16][Cap]);
 		capabilities.setCapability(readExcelValues.data[11][0], readExcelValues.data[11][Cap]);
-		//capabilities.setCapability("--session-override",true);
+		capabilities.setCapability("--session-override",true);
 		capabilities.setCapability("bundleId","com.weather.TWC");
 		//capabilities.setCapability("xcodeConfigfile","/Users/vishal.pathania/Downloads/appium-163/node_modules/appium-xcuitest-driver/WebDriverAgent/Config.xcconfig");
 		//capabilities.setCapability("xcodeSigningId","iPhone Developer");
