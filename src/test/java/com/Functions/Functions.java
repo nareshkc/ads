@@ -406,7 +406,7 @@ public class Functions extends Driver{
 		//capabilities.setCapability("xcodeSigningId","iPhone Developer");
 		//capabilities.setCapability("locationServicesEnabled", false);
 		//capabilities.setCapability("realDeviceLogger", "/Users/vishal.pathania/node_modules/deviceconsole/deviceconsole");
-		capabilities.setCapability("wdaLocalPort", "8201");	
+		//capabilities.setCapability("wdaLocalPort", "8201");	
 		//capabilities.setCapability("locationServicesAuthorized", true);
 		capabilities.setCapability("waitForAppScript","$.delay(5000); true");
 		capabilities.setCapability("clearSystemFiles",true);
