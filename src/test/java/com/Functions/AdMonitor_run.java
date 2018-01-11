@@ -111,14 +111,14 @@ public class AdMonitor_run extends Driver {
 		Functions.Setappinto_TestMode("nativeAd");
 		ExecutableFunctions.Function_validate_BB_ads("nativeAd");
 	}
-	@Test(priority=16)
+	@Test(priority=16,enabled = false)
 	public static void NativBB_Validations()throws Exception{
 		System.out.println("*********************** Started Validating Native BB ****************");
 		Functions.Setappinto_TestMode("Select");
 		//Functions.Setappinto_TestMode("nativeBB");
 		ExecutableFunctions.Function_validate_BB_ads("nativeBB");
 	}
-	@Test(priority=17)
+	@Test(priority=17,enabled = false)
 	public static void NativanimatedBB_Validations()throws Exception{
 		System.out.println("*********************** Started Validating Native animated BB ****************");
 		//Functions.Setappinto_TestMode("native_animated_BB");
