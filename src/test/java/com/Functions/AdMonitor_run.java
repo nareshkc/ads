@@ -41,7 +41,12 @@ public class AdMonitor_run extends Driver {
 	@Test(priority=1)
 	//Execute method for feed_1 Validation
 	public void feed_1_Ad_Validation() throws Exception {
+		try {
 		Functions.Feed_Ad_Validation(1);
+		}catch(Exception e) {
+			Functions.close_launchApp();
+			Functions.Feed_Ad_Validation(1);
+		}
 	}
 	
 	@Test(priority=2)
