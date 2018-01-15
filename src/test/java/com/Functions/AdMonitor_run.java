@@ -42,8 +42,10 @@ public class AdMonitor_run extends Driver {
 	//Execute method for feed_1 Validation
 	public void feed_1_Ad_Validation() throws Exception {
 		try {
+			logStep("Validating feed_1 ad");
 		Functions.Feed_Ad_Validation(1);
 		}catch(Exception e) {
+			logStep("App was closed suddenly trying to reopn and execute");
 			Functions.close_launchApp();
 			Functions.Feed_Ad_Validation(1);
 		}
@@ -52,22 +54,26 @@ public class AdMonitor_run extends Driver {
 	@Test(priority=2)
 	//Execute method for feed_2 Validation
 	public void feed_2_Ad_VAlidation() throws Exception{
+		logStep("Validating feed_2 ad");
 		Functions.Feed_Ad_Validation(2);
 	}
 	
 	@Test(priority=3)
 	//Execute method for feed_3 Validation
 	public void Feed_3_Ad_Validation() throws Exception {
+		logStep("Validating feed_1 ad");
 		Functions.Feed_Ad_Validation(3);
 	}
 	@Test(priority=4)
 	//Execute method for feed_4 Validation
 	public void feed_4_Ad_VAlidation() throws Exception{
+		logStep("Validating feed_1 ad");
 		Functions.Feed_Ad_Validation(4);
 	}
 	@Test(priority=5)
 	//Execute method for feed_5 Validation
 	public void feed_5_Ad_Validation() throws Exception {
+		logStep("Validating feed_1 ad");
 		Functions.Feed_Ad_Validation(5);
 	}
 	@Test(priority=6)
@@ -80,8 +86,10 @@ public class AdMonitor_run extends Driver {
 		//Functions.close_launchApp();
 		Functions.addnewAddress("Detail");
 		//Functions.ScrollUp_ToHomePage();
+		logStep("Validating hourly detail page ad");
 		ExecutableFunctions.Function_extened_HourlyPage_ads();
 		}catch(Exception e) {
+			logStep("app closed suddenly trying to restart and Validating hourly detail page ad");
 			Functions.close_launchApp();
 			Functions.addnewAddress("Detail");
 			//Functions.ScrollUp_ToHomePage();
@@ -93,6 +101,7 @@ public class AdMonitor_run extends Driver {
 	public void dailyPageAd_Validations() throws Exception{
 		System.out.println("*********************** Started Validating Daily Detail page ads ****************");
 		Functions.returnToWeather();
+		logStep("Validating Daily detail page ad");
 		ExecutableFunctions.Function_extened_DailyPage_ads();
 	}
 	@Test(priority=8)
@@ -100,23 +109,27 @@ public class AdMonitor_run extends Driver {
 	public void mapPageAd_Validations()throws Exception{
 		System.out.println("*********************** Started Validating Map Detail page ads ****************");
 		Functions.returnToWeather();
+		logStep("Validating Map detail page ad");
 		ExecutableFunctions.Function_extened_MapPage_ads();
 	}
 	@Test(priority=9)
 	//Execute method for news page ad Validation
 	public void newsPageAd_Validations()throws Exception{
 		System.out.println("*********************** Started Validating News Detail page ads ****************");
+		logStep("Validating News detail page ad");
 		ExecutableFunctions.Function_extened_NewsPage_ads();
 	}
 	@Test(priority=10)
 	//Execute method for Lifestyle combo - Cold & Flu page ad Validation
 	public void healthPage_cold_Flu_Ad_Validations()throws Exception{
 		System.out.println("*********************** Started Validating LS_Cold and Flu Detail page ads ****************");
+		logStep("Validating  LS_Cold and Flu detail page ad");
 		try {
 		Functions.enternewAddress("Bridgeton, New Jersey");
 		Thread.sleep(8000); 
 		ExecutableFunctions.Function_extened_LSModule_ads("LSModule(ColdAndFlu)");
 		}catch(Exception e) {
+			logStep("app closed suddenly trying to restart and Validating LS_Cold and Flu detail page ad");
 			Functions.close_launchApp();
 			Functions.enternewAddress("Bridgeton, New Jersey");
 			Thread.sleep(8000); 
@@ -127,24 +140,28 @@ public class AdMonitor_run extends Driver {
 	//Execute method for Lifestyle combo - Allergy page ad Validation
 	public void healthPage_Allergy_Ad_Validations()throws Exception{
 		System.out.println("*********************** Started Validating Ls_Allergy Detail page ads ****************");
+		logStep("Validating  Ls_Allergy detail page ad");
 		ExecutableFunctions.Function_extened_LSModule_ads("LSModule(Allergy)");
 	}
 	@Test(priority=12)
 	//Execute method for Lifestyle combo - Ski page ad Validation
 	public void healthPage_Ski_Ad_Validations()throws Exception{
 		System.out.println("*********************** Started Validating LS_Ski Detail page ads ****************");
+		logStep("Validating  LS_Ski detail page ad");
 		ExecutableFunctions.Function_extened_LSModule_ads("LSModule(Ski)");
 	}
 	@Test(priority=13)
 	//Execute method for Lifestyle combo - Running page ad Validation
 	public void HealthPage_Running_Ad_Validations()throws Exception{
 		System.out.println("*********************** Started Validating LS_Running Detail page ads ****************");
+		logStep("Validating  LS_Running detail page ad");
 		ExecutableFunctions.Function_extened_LSModule_ads("LSModule(Running)");
 	}
 	@Test(priority=14)
 	//Execute method for Lifestyle combo - Boat & Beach page ad Validation
 	public void healthPage_Boat_Beach_Ad_Validations()throws Exception{
 		System.out.println("*********************** Started Validating Ls_Boat_Beach Detail page ads ****************");
+		logStep("Validating  Ls_Boat_Beach detail page ad");
 		ExecutableFunctions.Function_extened_LSModule_ads("LSModule(Boat&Beach)");
 	}
 	@Test(priority=15,enabled=false)

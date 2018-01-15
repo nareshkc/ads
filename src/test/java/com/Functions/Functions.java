@@ -805,7 +805,6 @@ public class Functions extends Driver{
 
 	//Add New addresses
 	public static void addnewAddress(String AdType) throws Exception{
-
 		readExcelValues.excelValues("Smoke","AddressPage");
 		String Zip=readExcelValues.data[10][Cap].trim().toString();
 		String ChangedAddress=null;
@@ -814,15 +813,17 @@ public class Functions extends Driver{
 
 			//Functions.ScrollUp_ToHomePage();
 			Functions.put_Background_launcg();
+			logStep("Addrerss not specified, So Testing continue on current location");
 
 		}else{
+			logStep("Addrerss specified, So Testing continue on - " + Zip.toString());
 			System.out.println("Zip code is : "+Zip);
 			String[]CityName=Zip.split(",");
 			for(int i=1;i<=2;i++){
 				if(Zip.equals("null")){
 
 					System.out.println("Please verify ads on current location and Ad type is : "+readExcelValues.data[11][Cap]);
-
+					logStep("Addrerss not specified, So Testing continue on current location");
 				}else{
 					System.out.println("Please verify ads on specified location / Zip "+readExcelValues.data[10][Cap]+" and Ad type is : "+readExcelValues.data[11][Cap]);
 					Ad.findElementByName(readExcelValues.data[1][Cap]).click();
@@ -850,10 +851,13 @@ public class Functions extends Driver{
 					System.out.println("Enter Address is :"+Zip);
 					if(ChangedAddress.equalsIgnoreCase(Zip)){
 						System.out.println(Zip+ "-  Address selected");
+						logStep(Zip+ "-  Address selected");
+						
 						break;
 					}
 				}catch(Exception e){
 					System.out.println(Zip+ "-  Address is not selected");
+					logStep(Zip+ "-  Address is not selected");
 				}
 			}
 		}
@@ -861,6 +865,7 @@ public class Functions extends Driver{
 	}
 	//Enter New when no address found addresses
 	public static void enternewAddress_ifAddrssnotfound(String zip) throws Exception{
+		logStep("Try to Select new address");
 		if(zip.equals("null")){
 			zip=readExcelValues.data[10][Cap];
 		}
@@ -880,10 +885,12 @@ public class Functions extends Driver{
 				//select first name in the list
 				Ad.findElementByXPath(readExcelValues.data[8][Cap]).click();
 				Thread.sleep(2000); 
+				logStep("Selected new address of  - "+ zip);
 			}
 		}catch(Exception e){
 
 			System.out.println("User on CC page");
+			logStep("User on Select Home screen");
 		}
 
 	}
@@ -1033,35 +1040,43 @@ public class Functions extends Driver{
 
 	//clear Airlock Group
 	public static void clearAirlock() throws Exception  {
+		logStep("Try to clear Airlock groups");
 		readExcelValues.excelValues("Smoke","TestMode");
 		Ad.findElementByName(readExcelValues.data[24][Cap]).click();
 		try {
 			Ad.findElementByName("OK").click();
 			System.out.println("Airlock filter Clear with OK");
+			logStep("Airlock filter Clear with OK");
 
 
 		}catch(Exception e) {
 			System.out.println("Airlock filter Clear");
+			logStep("Airlock filter Clear");
 		}
 	}
 
 	//clear Airlock Group
 	public static void checkResponsiveMode() throws Exception  {
+		logStep("try to enable Responsive Mode");
 		readExcelValues.excelValues("Smoke","TestMode");
 		WebElement responsiveSwitch = Ad.findElementByXPath(readExcelValues.data[25][Cap]);
 		String responsiveswithVvalue=responsiveSwitch.getAttribute("value");
 		if(responsiveswithVvalue.equals("1")) {
 			System.out.println("Responsive Mode already enabled");
+			logStep("Responsive Mode already enabled");
 		}else {
 			responsiveSwitch.click();
+			logStep("Responsive Mode enabled");
 		}
 
 	}
 
 	//Put app in Background and relaunch
 	public static void put_Background_launcg() throws Exception {
+		logStep("Try to Put App in background for 3 seconds");
 		try {
 			Ad.runAppInBackground(3);
+			logStep("App launched after background for 3 seconds");
 		} catch (WebDriverException e) {
 			if (e.getMessage().contains("An error occurred while executing user supplied JavaScript")) {
 			} else {
@@ -1079,7 +1094,7 @@ public class Functions extends Driver{
 	public static void Setappinto_TestMode(String TestMode) throws Exception
 	{
 
-		logStep("Verify bb ad call in Test mode");
+		logStep("Trying to put app in test mode");
 		readExcelValues.excelValues("Smoke","TestMode");
 
 		MobileElement el = null;
@@ -1133,8 +1148,10 @@ public class Functions extends Driver{
 			SwitchValue =	AdsTestSwitch.getAttribute("value");
 			if(SwitchValue.equals("1")) {
 				System.out.println("Test Mode already enabled");
+				logStep("Test Mode already enabled");
 			}else {
 				AdsTestSwitch.click();
+				logStep("Test Mode enabled");
 			}
 			try {
 				Ad.findElementByName("Cancel").click();
@@ -1145,7 +1162,7 @@ public class Functions extends Driver{
 		}else if(TestMode.equals("nativeAd")) {
 			//clearAirlock();
 			//Select Test Group
-
+			logStep("Try to enable user group for nativeAd");
 			Ad.findElementByClassName("XCUIElementTypeSearchField").sendKeys("Vishal_Native");
 			try {
 				AdsTestSwitch =	Ad.findElementByXPath(readExcelValues.data[23][Cap]+"Vishal_Native']");
@@ -1162,9 +1179,10 @@ public class Functions extends Driver{
 			SwitchValue =	AdsTestSwitch.getAttribute("value");
 			if(SwitchValue.equals("1")) {
 				System.out.println("vishal_Native config already enabled");
+				logStep("vishal_Native config already enabled");
 			}else{
 				AdsTestSwitch.click();
-
+				logStep("vishal_Native config enabled");
 			}
 			try {
 				Ad.findElementByName("Cancel").click();
@@ -1174,7 +1192,7 @@ public class Functions extends Driver{
 		}else if(TestMode.equals("nativeBB")) {
 			//clearAirlock();
 			//Select Test Group
-
+			logStep("Try to enable user group for nativeBB");
 			Ad.findElementByClassName("XCUIElementTypeSearchField").sendKeys("IOS-843-NativeBB");
 			try {
 				AdsTestSwitch =	Ad.findElementByXPath(readExcelValues.data[23][Cap]+"IOS-843-NativeBB']");
@@ -1190,9 +1208,10 @@ public class Functions extends Driver{
 			SwitchValue =	AdsTestSwitch.getAttribute("value");
 			if(SwitchValue.equals("1")) {
 				System.out.println("IOS-843-NativeBB config already enabled");
+				logStep("IOS-843-NativeBB config already enabled");
 			}else{
 				AdsTestSwitch.click();
-
+				logStep("IOS-843-NativeBB config enabled");
 			}
 			try {
 				Ad.findElementByName("Cancel").click();
@@ -1275,13 +1294,17 @@ public class Functions extends Driver{
 		System.out.println("*********************** Started Validating for feed_"+feed+" ad ****************");
 		FeedValue=feed;
 		if(ModuleName.equals("NOW")||ModuleName.equals("LIVE")||ModuleName.contains("now")) {
+			logStep("Validated breaking news module enabled, So scroll adjested itself");
 			if(feed==0){
 				System.out.println("User on Home screen finding Feed_"+feed);
 			}else if(feed==4||feed==4||feed==4||feed==4||feed==5){
+				logStep("Swip for feed_1 ad");
 				Functions.scroll_Down();
 				Functions.scroll_Down();
 				System.out.println("User on Home screen finding Feed_"+feed);
 			}else{
+				logStep("Swip for feed_1 ad");
+				
 				Functions.scroll_Down();
 				System.out.println("User on Home screen finding Feed_"+feed);
 			}
@@ -1325,36 +1348,45 @@ public class Functions extends Driver{
 					Functions.returnToWeather();
 					if(feed==4) {
 						try {
+							logStep("Verifing feed_4 ad");
 							AdView = Ad.findElementByXPath("//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeCollectionView[1]/XCUIElementTypeCell["+CelView+"]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]");
+							logStep("Verifed for feed_4 ad");
 						}catch(Exception e) {
+							logStep("Trending module present, So Scroll adjested for feed_4");
 							Functions.scroll_Down();
 							AdView = Ad.findElementByXPath("//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeCollectionView[1]/XCUIElementTypeCell["+CelView+"]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]");
+							logStep("Verifed for feed_4 ad");
 						}
 					}else {
+						logStep("Verifing for feed_"+feed+" ad");
 					AdView = Ad.findElementByXPath("//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeCollectionView[1]/XCUIElementTypeCell["+CelView+"]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]");
+						logStep("Verifed for feed_"+feed+" ad");
 					}
 					//System.out.println("Feed_"+feed+" Ad present on the screen and Size is : "+AdView.getSize());
 					if(feed==1||feed==3||feed==5){
-
+						logStep("Validating for feed_"+feed+" ad sizes");
 						if(AdView.getSize().toString().equals("(301, 250)")||AdView.getSize().toString().equals("(300, 250)")||AdView.getSize().toString().equals("(301, 251)")||AdView.getSize().toString().equals("(300, 251)")){
 							if(AdView.isDisplayed()){
 								System.out.println("Feed_"+feed+" Ad present on the screen and Size is : "+AdView.getSize());
 								ScreenShot("Feed_"+feed,"Passed");
+								logStep("Validated for feed_"+feed+" ad sizes and Sizes are matched");
 								break;
 							}else{
 								Functions.scroll_Down();
 								System.out.println("Feed_"+feed+" Ad present on the screen and Size is : "+AdView.getSize());
 								ScreenShot("Feed_"+feed,"Passed");
+								logStep("Validated for feed_"+feed+" ad sizes and Sizes are matched");
 								break;
 							}
 						}
 					}else {
-
+						logStep("Validating for feed_"+feed+" ad sizes");
 						if(AdView.getSize().toString().equals("(321, 51)")||AdView.getSize().toString().equals("(320, 50)")||AdView.getSize().toString().equals("(321, 50)")||AdView.getSize().toString().equals("(320, 51)")){
 							System.out.println("Feed_"+feed+" Ad present on the screen and Size is : "+AdView.getSize());
 							if(AdView.isDisplayed()){
 
 								ScreenShot("Feed_"+feed,"Passed");
+								logStep("Validated for feed_"+feed+" ad sizes and Sizes are matched");
 								break;
 							}else {
 								Functions.scroll_Down();
@@ -1362,12 +1394,14 @@ public class Functions extends Driver{
 
 									//System.out.println("Feed_"+feed+" Ad present on the screen and Size is : "+AdView.getSize());
 									ScreenShot("Feed_"+feed,"Passed");
+									logStep("Validated for feed_"+feed+" ad sizes and Sizes are matched");
 									break;
 
 								}else{
 									Functions.scroll_Down();
 									//System.out.println("Feed_"+feed+" Ad present on the screen and Size is : "+AdView.getSize());
 									ScreenShot("Feed_"+feed,"Passed");
+									logStep("Validated for feed_"+feed+" ad sizes and Sizes are matched");
 									break;
 								}
 							}
@@ -1376,12 +1410,15 @@ public class Functions extends Driver{
 
 				}catch(Exception e){
 					System.out.println("Feed_"+feed+" Ad not presented on the screen");
+					logStep("Feed_"+feed+" Ad not presented on the screen");
 
 				}
 				if(CelView==5){
-					File Screenshot = ((TakesScreenshot)Ad).getScreenshotAs(OutputType.FILE);
+					//File Screenshot = ((TakesScreenshot)Ad).getScreenshotAs(OutputType.FILE);
 					ScreenShot("Feed_"+feed,"Failed");
 					softAssert.fail("Feed_"+feed+"Ad Not prsent on the screen");
+					logStep("Feed_"+feed+" Ad not presented on the screen");
+					attachScreen();
 				}
 			}
 
@@ -1395,7 +1432,7 @@ public class Functions extends Driver{
 		//Functions.scroll_Down();
 		MobileElement Modules=null;
 		String moduleName=null;
-
+		logStep("Checking for breaking news module");
 		try {
 			//Modules = (MobileElement)  Ad.findElementByXPath("(//XCUIElementTypeStaticText[@name=\"label_callToAction\"])[1]");
 			Modules = Ad.findElementByName("breaking-news-card");
@@ -1405,8 +1442,10 @@ public class Functions extends Driver{
 			if(ModuleName.equals("NOW")||ModuleName.equals("LIVE")) {
 
 				System.out.println("Breaking News Module not enabled");
+				logStep("Breaking News Module not enabled");
 			}else {
 				System.out.println("Breaking News Module enabled");
+				logStep("Breaking News Module enabled");
 			}
 		}catch(Exception e) {
 			Modules = Ad.findElementByName("right-now-card");
@@ -1415,8 +1454,10 @@ public class Functions extends Driver{
 			if(ModuleName.equals("NOW")||ModuleName.equals("LIVE")||ModuleName.contains("now")) {
 
 				System.out.println("Breaking News Module not enabled");
+				logStep("Breaking News Module not enabled");
 			}else {
 				System.out.println("Breaking News Module enabled");
+				logStep("Breaking News Module enabled");
 			}
 
 		}
@@ -3395,14 +3436,16 @@ public class Functions extends Driver{
 
 	//Close the app and launch the app
 	public static void close_launchApp() throws Exception{
-
+		logStep("Try to close the app and relaunch");
 		Ad.closeApp();
 		System.out.println("App closed for restart");
+		logStep("App closed for restart");
 		//			logStep("App Closed SuccessFully");
 		Thread.sleep(1000);
 		Ad.launchApp();
 		Thread.sleep(1000);
 		System.out.println("App launched after restart");
+		logStep("App launched after restart");
 		Functions.Handle_onwanted_popups();
 
 	}

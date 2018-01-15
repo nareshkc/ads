@@ -111,6 +111,7 @@ public class ExecutableFunctions extends Driver   {
 		WebDriverWait wait = new WebDriverWait(Ad,15);
 		WebElement adPlace=null;
 		if(BBType.equals("StaticBB")) {
+			logStep("Validating "+BBType +" Ad ");
 			Functions.enternewAddress("Bridgeton, New Jersey");
 			try {
 				Thread.sleep(5000);
@@ -131,6 +132,7 @@ public class ExecutableFunctions extends Driver   {
 			}
 
 		}else if(BBType.equals("nativeBB")) {
+			logStep("Validating "+BBType +" Ad ");
 			Functions.enternewAddress("Pond Eddy, New York");
 			try {
 				Thread.sleep(5000);
@@ -151,6 +153,7 @@ public class ExecutableFunctions extends Driver   {
 			}
 
 		}else if(BBType.equals("native_animated_BB")) {
+			logStep("Validating "+BBType +" Ad ");
 			Functions.enternewAddress("Rainbow City, Alabama");
 			Ad.swipe(181, 91, 3, 494, 2000);
 			try {
