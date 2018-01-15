@@ -1276,7 +1276,7 @@ public class Functions extends Driver{
 		FeedValue=feed;
 		if(ModuleName.equals("NOW")||ModuleName.equals("LIVE")||ModuleName.contains("now")) {
 			if(feed==0){
-				System.out.println(" on Home screen finding Feed_"+feed);
+				System.out.println("User on Home screen finding Feed_"+feed);
 			}else if(feed==4||feed==4||feed==4||feed==4||feed==5){
 				Functions.scroll_Down();
 				Functions.scroll_Down();
