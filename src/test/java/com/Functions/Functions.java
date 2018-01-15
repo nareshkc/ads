@@ -406,7 +406,7 @@ public class Functions extends Driver{
 		//capabilities.setCapability("xcodeSigningId","iPhone Developer");
 		//capabilities.setCapability("locationServicesEnabled", false);
 		//capabilities.setCapability("realDeviceLogger", "/Users/vishal.pathania/node_modules/deviceconsole/deviceconsole");
-		//capabilities.setCapability("wdaLocalPort", "8201");	
+		//capabilities.setCapability("wdaLocalPort", "8200");	
 		//capabilities.setCapability("locationServicesAuthorized", true);
 		capabilities.setCapability("waitForAppScript","$.delay(5000); true");
 		capabilities.setCapability("clearSystemFiles",true);
@@ -1323,7 +1323,16 @@ public class Functions extends Driver{
 
 				try{
 					Functions.returnToWeather();
+					if(feed==4) {
+						try {
+							AdView = Ad.findElementByXPath("//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeCollectionView[1]/XCUIElementTypeCell["+CelView+"]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]");
+						}catch(Exception e) {
+							Functions.scroll_Down();
+							AdView = Ad.findElementByXPath("//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeCollectionView[1]/XCUIElementTypeCell["+CelView+"]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]");
+						}
+					}else {
 					AdView = Ad.findElementByXPath("//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeCollectionView[1]/XCUIElementTypeCell["+CelView+"]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]");
+					}
 					//System.out.println("Feed_"+feed+" Ad present on the screen and Size is : "+AdView.getSize());
 					if(feed==1||feed==3||feed==5){
 
