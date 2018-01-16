@@ -1,6 +1,10 @@
 package com.Genaral;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+
+import ru.yandex.qatools.allure.annotations.Attachment;
 import ru.yandex.qatools.allure.annotations.Step;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -24,4 +28,10 @@ public class Driver extends PropertyFile {
 	@Step("{0}")
 	public static void logStep(String stepName) {
 	}
+	
+	@Attachment("Screenshot on failure")
+    public static byte[] attachScreen() {
+        logStep("Taking screenshot");
+        return (((TakesScreenshot)Ad).getScreenshotAs(OutputType.BYTES));
+    }
 }
