@@ -51,7 +51,7 @@ public class AdMonitor_run extends Driver {
 		}
 	}
 	
-	@Test(priority=2)
+	/*@Test(priority=2)
 	//Execute method for feed_2 Validation
 	public void feed_2_Ad_VAlidation() throws Exception{
 		logStep("Validating feed_2 ad");
@@ -200,7 +200,7 @@ public class AdMonitor_run extends Driver {
 	public void animatedBBAd_Validations()throws Exception{
 		System.out.println("*********************** Started Validating AnimatedBB ad ****************");
 		ExecutableFunctions.Function_validate_BB_ads("AnimatedBB");
-	}
+	}*/
 
 	@BeforeMethod
 	public void beforeMethod() {
