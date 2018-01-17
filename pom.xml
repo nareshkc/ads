@@ -1,13 +1,14 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.iOS.arms</groupId>
-  <artifactId>com.iOS.arms</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
-  <url>http://maven.apache.org</url>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.iOS.arms</groupId>
+	<artifactId>com.iOS.arms</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<url>http://maven.apache.org</url>
 	<properties>
-		<aspectj.version>1.8.5</aspectj.version>
-		<allure.version>1.4.16</allure.version>
+		<aspectj.version>1.8.13</aspectj.version>
+		<allure.version>1.5.4</allure.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- </properties> -->
 
@@ -17,12 +18,12 @@
 	</properties>
 
 
-<!-- 	<repositories> -->
-<!-- 		<repository> -->
-<!-- 			<id>my-local-repo</id> -->
-<!-- 			<url>file:/Users/aparna/Desktop/my-repo/repo</url> -->
-<!-- 		</repository> -->
-<!-- 	</repositories> -->
+	<!-- <repositories> -->
+	<!-- <repository> -->
+	<!-- <id>my-local-repo</id> -->
+	<!-- <url>file:/Users/aparna/Desktop/my-repo/repo</url> -->
+	<!-- </repository> -->
+	<!-- </repositories> -->
 
 	<dependencies>
 
@@ -31,6 +32,12 @@
 			<groupId>com.relevantcodes</groupId>
 			<artifactId>extentreports</artifactId>
 			<version>2.10</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/pmd/pmd -->
+		<dependency>
+			<groupId>pmd</groupId>
+			<artifactId>pmd</artifactId>
+			<version>4.2.4</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
@@ -126,7 +133,7 @@
 		</dependency>
 
 
-		
+
 	</dependencies>
 
 
@@ -191,7 +198,7 @@
 			<plugin>
 				<groupId>ru.yandex.qatools.allure</groupId>
 				<artifactId>allure-maven-plugin</artifactId>
-				<version>2.0</version>
+				<version>2.6</version>
 			</plugin>
 		</plugins>
 	</reporting>
