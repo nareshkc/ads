@@ -166,6 +166,14 @@ public class Functions extends Driver{
 		Runtime.getRuntime().exec(command);  
 		//System.out.println("Appium server stop");  
 	} 
+	
+	//Stop iProxy Server
+		public static  void stopiProxyServer() throws IOException {  
+			//String[] command ={"/usr/bin/killall","-KILL","node"};  
+			String[] commandiProxy = new String[]{"sh", "-c", "ps -ax|grep -i 'iproxy'|grep -v grep|awk '{print 'kill -9' $1}'|sh"};
+			Runtime.getRuntime().exec(commandiProxy);  
+			//System.out.println("Appium server stop");  
+		} 
 
 	//Stop Appium Server
 	public static  void startAppiumServer_command() throws Exception {  
@@ -210,7 +218,10 @@ public class Functions extends Driver{
 		System.out.println("Stopping the appium server");
 		stopAppiumServer();
 		System.out.println("Appium server is stopped");
-		//Thread.sleep(10000);
+		Thread.sleep(1000);
+		stopiProxyServer();
+		System.out.println("iProxy server is stopped");
+		Thread.sleep(1000);
 		System.out.println("Starting the appium server");
 		startAppiumServer();
 		//startAppiumServer_command();
