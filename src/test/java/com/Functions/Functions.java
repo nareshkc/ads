@@ -1305,21 +1305,22 @@ public class Functions extends Driver{
 		System.out.println("*********************** Started Validating for feed_"+feed+" ad ****************");
 		FeedValue=feed;
 		if(ModuleName.equals("NOW")||ModuleName.equals("LIVE")||ModuleName.contains("now")) {
-			logStep("Validated breaking news module enabled, So scroll adjested itself");
+			logStep("Validated breaking news module not enabled, So scroll adjested itself");
 			if(feed==0){
 				System.out.println("User on Home screen finding Feed_"+feed);
 			}else if(feed==4||feed==4||feed==4||feed==4||feed==5){
-				logStep("Swip for feed_1 ad");
+				logStep("Swip for feed_"+feed+" ad");
 				Functions.scroll_Down();
 				Functions.scroll_Down();
 				System.out.println("User on Home screen finding Feed_"+feed);
 			}else{
-				logStep("Swip for feed_1 ad");
+				logStep("Swip for feed_"+feed+" ad");
 				
 				Functions.scroll_Down();
 				System.out.println("User on Home screen finding Feed_"+feed);
 			}
 		}else{
+			logStep("Validated breaking news module enabled, So scroll adjested itself");
 			if(feed==0){
 				System.out.println(" on Home screen finding Feed_"+feed);
 			}else if(feed==3||feed==3||feed==3||feed==3||feed==3){
@@ -1349,7 +1350,7 @@ public class Functions extends Driver{
 				}catch(Exception e){
 					System.out.println("Feed_"+feed+" Ad not presented on the screen");
 					//File Screenshot = ((TakesScreenshot)Ad).getScreenshotAs(OutputType.FILE);
-					ScreenShot("Feed"+feed,"Failed");
+					ScreenShot("Feed_"+feed,"Failed");
 					softAssert.fail("Feed_"+feed+"Ad Not prsent on the screen");
 					break;
 				}

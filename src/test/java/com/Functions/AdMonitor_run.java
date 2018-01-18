@@ -61,19 +61,19 @@ public class AdMonitor_run extends Driver {
 	@Test(priority=3)
 	//Execute method for feed_3 Validation
 	public void Feed_3_Ad_Validation() throws Exception {
-		logStep("Validating feed_1 ad");
+		logStep("Validating feed_3 ad");
 		Functions.Feed_Ad_Validation(3);
 	}
 	@Test(priority=4)
 	//Execute method for feed_4 Validation
 	public void feed_4_Ad_VAlidation() throws Exception{
-		logStep("Validating feed_1 ad");
+		logStep("Validating feed_4 ad");
 		Functions.Feed_Ad_Validation(4);
 	}
 	@Test(priority=5)
 	//Execute method for feed_5 Validation
 	public void feed_5_Ad_Validation() throws Exception {
-		logStep("Validating feed_1 ad");
+		logStep("Validating feed_5 ad");
 		Functions.Feed_Ad_Validation(5);
 	}
 	@Test(priority=6)
