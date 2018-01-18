@@ -235,6 +235,7 @@ public class AdMonitor_run extends Driver {
 	public void afterTest() throws Exception {
 		Functions.downloadXMLFile();
 		driver_ios.close();
+		Ad.quit();
 	}
 
 }
