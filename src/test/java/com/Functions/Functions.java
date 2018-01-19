@@ -3010,6 +3010,7 @@ public class Functions extends Driver{
 		}else{
 			System.out.println("User Still on Home page element not fount");
 			logStep("Navigating failed to detaile page");
+			ScreenShot(Pagename,"Failed");
 			Assert.fail();
 		}
 
@@ -3151,6 +3152,7 @@ public class Functions extends Driver{
 
 					System.out.println("Ad is not present / ad possistion changed");
 					logStep("Ad is not present / ad possistion changed");
+					ScreenShot(Pagename,"Failed");
 					Assert.fail("Ad is not present / ad possistion changed");
 					//Assert.fail("Ad is not present / ad possistion changed");
 				}
@@ -3196,6 +3198,7 @@ public class Functions extends Driver{
 					}catch(Exception e1){
 
 						System.out.println("add is not present");
+						ScreenShot(Pagename,"Failed");
 						logStep("Ad is not presented");
 						//Functions.TakeScreenshot();
 					}
