@@ -1351,6 +1351,7 @@ public class Functions extends Driver{
 					System.out.println("Feed_"+feed+" Ad not presented on the screen");
 					//File Screenshot = ((TakesScreenshot)Ad).getScreenshotAs(OutputType.FILE);
 					ScreenShot("Feed_"+feed,"Failed");
+					attachScreen();
 					softAssert.fail("Feed_"+feed+"Ad Not prsent on the screen");
 					break;
 				}
@@ -1423,7 +1424,7 @@ public class Functions extends Driver{
 				}catch(Exception e){
 					System.out.println("Feed_"+feed+" Ad not presented on the screen");
 					logStep("Feed_"+feed+" Ad not presented on the screen");
-
+					attachScreen();
 				}
 				if(CelView==5){
 					//File Screenshot = ((TakesScreenshot)Ad).getScreenshotAs(OutputType.FILE);
@@ -3153,6 +3154,7 @@ public class Functions extends Driver{
 					System.out.println("Ad is not present / ad possistion changed");
 					logStep("Ad is not present / ad possistion changed");
 					ScreenShot(Pagename,"Failed");
+					attachScreen();
 					Assert.fail("Ad is not present / ad possistion changed");
 					//Assert.fail("Ad is not present / ad possistion changed");
 				}
@@ -3199,6 +3201,7 @@ public class Functions extends Driver{
 
 						System.out.println("add is not present");
 						ScreenShot(Pagename,"Failed");
+						attachScreen();
 						logStep("Ad is not presented");
 						//Functions.TakeScreenshot();
 					}
@@ -3271,6 +3274,7 @@ public class Functions extends Driver{
 					Adsizes=AdEle.getSize().toString();
 				}catch(Exception e1){
 					ScreenShot(Pagename,"Failed");
+					attachScreen();
 					Assert.fail("Ad not present on the "+Pagename+" detaile page");
 				}
 				//Functions.scroll_Down();
@@ -3323,6 +3327,8 @@ public class Functions extends Driver{
 
 											System.out.println("Ad page not presented");
 											Functions.TestName=null;
+											attachScreen();
+											logStep("Ad page not presented");
 											Assert.fail("Ad page not presented");
 										}
 
@@ -3386,7 +3392,8 @@ public class Functions extends Driver{
 					logStep("Ad present but sizes are not matched");
 					ScreenShot(Pagename,"Failed");//Functions.TakeScreenshot();
 					Functions.TestName=null;
-					//					Assert.fail();
+					//Assert.fail();
+					attachScreen();
 					Assert.fail("Ad preset on "+Pagename+" Module,  but sizes are not matched");
 				}
 
