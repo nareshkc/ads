@@ -119,7 +119,7 @@ public class AdMonitor_run extends Driver {
 		logStep("Validating News detail page ad");
 		ExecutableFunctions.Function_extened_NewsPage_ads();
 	}
-	@Test(priority=10)
+	/*@Test(priority=10)
 	//Execute method for Lifestyle combo - Cold & Flu page ad Validation
 	public void healthPage_cold_Flu_Ad_Validations()throws Exception{
 		System.out.println("*********************** Started Validating LS_Cold and Flu Detail page ads ****************");
@@ -143,7 +143,7 @@ public class AdMonitor_run extends Driver {
 		logStep("Validating  Ls_Allergy detail page ad");
 		ExecutableFunctions.Function_extened_LSModule_ads("LSModule(Allergy)");
 	}
-	/*@Test(priority=12)
+	@Test(priority=12)
 	//Execute method for Lifestyle combo - Ski page ad Validation
 	public void healthPage_Ski_Ad_Validations()throws Exception{
 		System.out.println("*********************** Started Validating LS_Ski Detail page ads ****************");
