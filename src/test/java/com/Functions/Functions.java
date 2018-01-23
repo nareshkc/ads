@@ -1308,7 +1308,7 @@ public class Functions extends Driver{
 			logStep("Validated breaking news module not enabled, So scroll adjested itself");
 			if(feed==0){
 				System.out.println("User on Home screen finding Feed_"+feed);
-			}else if(feed==4||feed==4||feed==4||feed==4||feed==5){
+			}else if(feed==4||feed==4||feed==3||feed==4||feed==5){
 				logStep("Swip for feed_"+feed+" ad");
 				Functions.scroll_Down();
 				Functions.scroll_Down();
