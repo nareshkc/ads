@@ -163,7 +163,7 @@ public class AdMonitor_run extends Driver {
 		System.out.println("*********************** Started Validating Ls_Boat_Beach Detail page ads ****************");
 		logStep("Validating  Ls_Boat_Beach detail page ad");
 		ExecutableFunctions.Function_extened_LSModule_ads("LSModule(Boat&Beach)");
-	}*/
+	}
 	@Test(priority=15,enabled=false)
 	//Execute method for native ad Validation
 	public void nativAd_Validations()throws Exception{
@@ -171,7 +171,7 @@ public class AdMonitor_run extends Driver {
 		Functions.Setappinto_TestMode("Select");
 		Functions.Setappinto_TestMode("nativeAd");
 		ExecutableFunctions.Function_validate_BB_ads("nativeAd");
-	}
+	}*/
 	@Test(priority=16)
 	//Execute method for nativeBB-ad Validation
 	public void nativBB_Validations()throws Exception{
@@ -187,7 +187,7 @@ public class AdMonitor_run extends Driver {
 		//Functions.Setappinto_TestMode("native_animated_BB");
 		ExecutableFunctions.Function_validate_BB_ads("native_animated_BB");
 	}
-	@Test(priority=18,enabled = false)
+	/*@Test(priority=18,enabled = false)
 	//Execute method for Static BB Ad Validation
 	public void staticBBAd_Validations()throws Exception{
 		System.out.println("*********************** Started Validating StaticBB ad ****************");
@@ -200,7 +200,7 @@ public class AdMonitor_run extends Driver {
 	public void animatedBBAd_Validations()throws Exception{
 		System.out.println("*********************** Started Validating AnimatedBB ad ****************");
 		ExecutableFunctions.Function_validate_BB_ads("AnimatedBB");
-	}
+	}*/
 
 	@BeforeMethod
 	public void beforeMethod() {
