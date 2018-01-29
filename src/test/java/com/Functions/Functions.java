@@ -265,8 +265,10 @@ public class Functions extends Driver{
 			//action.press(181, 91).waitAction(1000).moveTo(3,494).release().perform();
 		}else if(SwipeType.equals("right-to-left")){
 			MobileElement skiModule=null;
+			MobileElement AllergyModule=null;
 			MobileElement coldFluModule =null;
 			if(excelPage.equals("LSModule(Running)")||excelPage.equals("LSModule(Ski))")||excelPage.equals("LSModule(Boat&Beach)")) {
+				AllergyModule= Ad.findElementByXPath("//XCUIElementTypeStaticText[@name='Allergy_title']");
 				skiModule= Ad.findElementByXPath("//XCUIElementTypeStaticText[@name='ski_title']");
 				coldFluModule = Ad.findElementByXPath("//XCUIElementTypeStaticText[@name='coldAndFlu_title']");
 				//			}else if(excelPage.equals("LSModule(Boat&Beach)")){
@@ -1359,22 +1361,22 @@ public class Functions extends Driver{
 
 				try{
 					Functions.returnToWeather();
-//					if(feed==4) {
-//						try {
-//							logStep("Verifing feed_4 ad");
-//							AdView = Ad.findElementByXPath("//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeCollectionView[1]/XCUIElementTypeCell["+CelView+"]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]");
-//							logStep("Verifed for feed_4 ad");
-//						}catch(Exception e) {
-//							logStep("Trending module present, So Scroll adjested for feed_4");
-//							Functions.scroll_Down();
-//							AdView = Ad.findElementByXPath("//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeCollectionView[1]/XCUIElementTypeCell["+CelView+"]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]");
-//							logStep("Verifed for feed_4 ad");
-//						}
-//					}else {
+					if(feed==4) {
+						try {
+							logStep("Verifing feed_4 ad");
+							AdView = Ad.findElementByXPath("//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeCollectionView[1]/XCUIElementTypeCell["+CelView+"]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]");
+							logStep("Verifed for feed_4 ad");
+						}catch(Exception e) {
+							logStep("Trending module present, So Scroll adjested for feed_4");
+							Functions.scroll_Down();
+							AdView = Ad.findElementByXPath("//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeCollectionView[1]/XCUIElementTypeCell["+CelView+"]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]");
+							logStep("Verifed for feed_4 ad");
+						}
+					}else {
 						logStep("Verifing for feed_"+feed+" ad");
 					AdView = Ad.findElementByXPath("//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeCollectionView[1]/XCUIElementTypeCell["+CelView+"]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]");
 						logStep("Verifed for feed_"+feed+" ad");
-					//}
+					}
 					//System.out.println("Feed_"+feed+" Ad present on the screen and Size is : "+AdView.getSize());
 					if(feed==1||feed==3||feed==5){
 						logStep("Validating for feed_"+feed+" ad sizes");
@@ -2292,7 +2294,7 @@ public class Functions extends Driver{
 		String projDir = System.getProperty("user.dir");
 		File sourceFile,destinationFile = null;
 		String SourcePath=projDir+File.separator+Foldername+"/";
-		String DestinationPath="/Users/vishal.pathania/.jenkins/workspace/IPhone_Smoke_Test_Cases/target/site/allure-maven-plugin";
+		String DestinationPath="/Users/macmini/.jenkins/workspace/iOS_ARMS/allure-report/";
 		List<String> get_content_file_name = listFiles(SourcePath);
 		String Filename=null;
 		String destPath=null;
@@ -2302,8 +2304,8 @@ public class Functions extends Driver{
 			Filename=get_content_file_name.get(i);
 			System.out.println("File name is :+"+Filename);
 			sourceFile = new File(SourcePath.concat(get_content_file_name.get(i)));
-			if(get_content_file_name.get(i).contains("allure-logo.png")||get_content_file_name.get(i).contains("tests_passed.jpg")){
-				destPath=DestinationPath+"/img/";
+			if(get_content_file_name.get(i).contains("style.css")){
+				destPath=DestinationPath;
 				destinationFile = new File(destPath.concat(get_content_file_name.get(i)));
 			}else if(get_content_file_name.get(i).contains("environment.json")||get_content_file_name.get(i).contains("timeline.json")||get_content_file_name.get(i).contains("report.json")){
 				destPath=DestinationPath+"/data/";
@@ -2961,7 +2963,10 @@ public class Functions extends Driver{
 						}catch(Exception e) {
 							Navigater=Ad.findElementById("news_article_thumbnail_0");
 						}
-					}else {
+					}else if(excelPage.equals("LSModule(OutDoor)")||excelPage.equals("LSModule(Ski)")||excelPage.equals("LSModule(Running)")||excelPage.equals("LSModule(Boat&Beach")||excelPage.equals("LSModule(ColdAndFlu)"))
+					{
+						Navigater = Ad.findElementByAccessibilityId(readExcelValues.data[5][Cap]);
+					}else{
 						Navigater = Ad.findElementByXPath(readExcelValues.data[5][Cap]);
 					}
 					if(Navigater.isDisplayed()){
