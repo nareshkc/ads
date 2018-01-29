@@ -38,7 +38,7 @@ public class AdMonitor_run extends Driver {
 	//	}
 	
 	
-	/*@Test(priority=1)
+	@Test(priority=1)
 	//Execute method for feed_1 Validation
 	public void feed_1_Ad_Validation() throws Exception {
 		try {
@@ -75,7 +75,7 @@ public class AdMonitor_run extends Driver {
 	public void feed_5_Ad_Validation() throws Exception {
 		logStep("Validating feed_5 ad");
 		Functions.Feed_Ad_Validation(5);
-	}
+	}*/
 	@Test(priority=6)
 	//Execute method for hourly page ad Validation
 	public void hourlyPageAd_Validations() throws Exception{
@@ -119,7 +119,7 @@ public class AdMonitor_run extends Driver {
 		logStep("Validating News detail page ad");
 		ExecutableFunctions.Function_extened_NewsPage_ads();
 	}*/
-	@Test(priority=10)
+	/*@Test(priority=10)
 	//Execute method for Lifestyle combo - Cold & Flu page ad Validation
 	public void healthPage_cold_Flu_Ad_Validations()throws Exception{
 		System.out.println("*********************** Started Validating LS_Cold and Flu Detail page ads ****************");
@@ -171,7 +171,7 @@ public class AdMonitor_run extends Driver {
 		Functions.Setappinto_TestMode("Select");
 		Functions.Setappinto_TestMode("nativeAd");
 		ExecutableFunctions.Function_validate_BB_ads("nativeAd");
-	}
+	}*/
 	@Test(priority=16)
 	//Execute method for nativeBB-ad Validation
 	public void nativBB_Validations()throws Exception{
@@ -187,7 +187,7 @@ public class AdMonitor_run extends Driver {
 		//Functions.Setappinto_TestMode("native_animated_BB");
 		ExecutableFunctions.Function_validate_BB_ads("native_animated_BB");
 	}
-	@Test(priority=18,enabled = false)
+	/*@Test(priority=18,enabled = false)
 	//Execute method for Static BB Ad Validation
 	public void staticBBAd_Validations()throws Exception{
 		System.out.println("*********************** Started Validating StaticBB ad ****************");
@@ -200,7 +200,7 @@ public class AdMonitor_run extends Driver {
 	public void animatedBBAd_Validations()throws Exception{
 		System.out.println("*********************** Started Validating AnimatedBB ad ****************");
 		ExecutableFunctions.Function_validate_BB_ads("AnimatedBB");
-	}
+	}*/
 
 	@BeforeMethod
 	public void beforeMethod() {
