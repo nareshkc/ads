@@ -1785,7 +1785,8 @@ public class Functions extends Driver{
 		Thread.sleep(2000);
 		System.out.println("Export file");
 		//driver.navigate().to(readExcelValues.data[3][0]);
-		Thread.sleep(5000);
+		Thread.sleep(8000);
+		Functions.clear_session();
 		//driver.close();
 	}
 
