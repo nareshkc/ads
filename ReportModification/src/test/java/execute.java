@@ -45,7 +45,7 @@ public class execute {
 	public static void move_Files(String Foldername)throws Exception{
 		String projDir = System.getProperty("user.dir");
 		File sourceFile,destinationFile = null;
-		String SourcePath=projDir+File.separator+Foldername+"/";
+		String SourcePath="/Users/macmini/.jenkins/workspace/ReportModify_iOS/Allure_Style/";
 		String DestinationPath="/Users/macmini/.jenkins/workspace/iOS_ARMS/allure-report/";
 		List<String> get_content_file_name = listFiles(SourcePath);
 		String Filename=null;
