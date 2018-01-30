@@ -225,8 +225,8 @@ public class AdMonitor_run extends Driver {
 		//System.out.println("App launched ");
 		//Functions.close_launchApp();
 		Functions.delete_screenshots();
-//		Functions.Setappinto_TestMode("UnSelect");
-//		Functions.addnewAddress("Feed");
+		Functions.Setappinto_TestMode("UnSelect");
+		Functions.addnewAddress("Feed");
 		Functions.scroll_Down();
 		Functions.check_BN_enabled();
 	}
