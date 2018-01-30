@@ -118,7 +118,7 @@ public class AdMonitor_run extends Driver {
 		System.out.println("*********************** Started Validating News Detail page ads ****************");
 		logStep("Validating News detail page ad");
 		ExecutableFunctions.Function_extened_NewsPage_ads();
-	}*/
+	}
 	/*@Test(priority=10)
 	//Execute method for Lifestyle combo - Cold & Flu page ad Validation
 	public void healthPage_cold_Flu_Ad_Validations()throws Exception{
@@ -235,7 +235,7 @@ public class AdMonitor_run extends Driver {
 	public void afterTest() throws Exception {
 		Functions.downloadXMLFile();
 		driver_ios.close();
-		Functions.move_Files("Allure_Style");
+		//Functions.move_Files("Allure_Style");
 		Ad.quit();
 	}
 
