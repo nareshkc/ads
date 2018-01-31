@@ -1,8 +1,20 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.reportModification</groupId>
-  <artifactId>com.reportModification</artifactId>
+  <groupId>com.report.test</groupId>
+  <artifactId>com.report.test</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <url>http://maven.apache.org</url>
+  <properties>
+		<aspectj.version>1.8.13</aspectj.version>
+		<allure.version>1.5.4</allure.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- </properties> -->
+
+		<!-- <properties> -->
+		<suiteXmlFile>testng.xml</suiteXmlFile>
+		<skipTests>false</skipTests>
+	</properties>
   <dependencies>
 
 		<!-- Extentreports Dependency JAR -->
@@ -99,8 +111,69 @@
 			<artifactId>poi</artifactId>
 			<version>3.9</version>
 		</dependency>
-
+    <dependency>
+    <groupId>org.zeroturnaround</groupId>
+    <artifactId>zt-zip</artifactId>
+    <version>1.12</version>
+    <type>jar</type>
+    </dependency>
 
 
 	</dependencies>
+	
+	<build>
+		<pluginManagement>
+
+
+			<plugins>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+
+					<configuration>
+						<version>3.3</version>
+
+					</configuration>
+				</plugin>
+
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.6</version>
+					<configuration>
+
+						<suiteXmlFiles>
+							<suiteXmlFile>testng.xml</suiteXmlFile>
+							<!-- <suiteXmlFile>${suiteXmlFile}</suiteXmlFile> -->
+						</suiteXmlFiles>
+
+						<testFailureIgnore>true</testFailureIgnore>
+						<argLine>
+							-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+						</argLine>
+					</configuration>
+					<dependencies>
+						<dependency>
+							<groupId>org.aspectj</groupId>
+							<artifactId>aspectjweaver</artifactId>
+							<version>${aspectj.version}</version>
+						</dependency>
+					</dependencies>
+				</plugin>
+				<plugin>
+					<groupId>org.eclipse.jetty</groupId>
+					<artifactId>jetty-maven-plugin</artifactId>
+					<version>9.2.10.v20150310</version>
+					<configuration>
+						<webAppSourceDirectory>${project.build.directory}/site/allure-maven-plugin</webAppSourceDirectory>
+						<stopKey>stop</stopKey>
+						<stopPort>1234</stopPort>
+					</configuration>
+				</plugin>
+
+			</plugins>
+		</pluginManagement>
+	</build>
 </project>
