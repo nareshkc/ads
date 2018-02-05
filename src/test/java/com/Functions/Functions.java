@@ -166,14 +166,14 @@ public class Functions extends Driver{
 		Runtime.getRuntime().exec(command);  
 		//System.out.println("Appium server stop");  
 	} 
-	
+
 	//Stop iProxy Server
-		public static  void stopiProxyServer() throws IOException {  
-			//String[] command ={"/usr/bin/killall","-KILL","node"};  
-			String[] commandiProxy = new String[]{"sh", "-c", "ps -ax|grep -i 'iproxy'|grep -v grep|awk '{print 'kill -9' $1}'|sh"};
-			Runtime.getRuntime().exec(commandiProxy);  
-			//System.out.println("Appium server stop");  
-		} 
+	public static  void stopiProxyServer() throws IOException {  
+		//String[] command ={"/usr/bin/killall","-KILL","node"};  
+		String[] commandiProxy = new String[]{"sh", "-c", "ps -ax|grep -i 'iproxy'|grep -v grep|awk '{print 'kill -9' $1}'|sh"};
+		Runtime.getRuntime().exec(commandiProxy);  
+		//System.out.println("Appium server stop");  
+	} 
 
 	//Stop Appium Server
 	public static  void startAppiumServer_command() throws Exception {  
@@ -258,7 +258,7 @@ public class Functions extends Driver{
 
 		//TouchAction action= new TouchAction(Ad);
 		if(SwipeType.equals("Up")) {
-			Ad.swipe(386, 626, -11, -533, 2000);
+			Ad.swipe(386, 626, -4, -533, 2000);
 			//action.press(356, 626).waitAction(1000).moveTo(-11,-533).release().perform();
 		}else if(SwipeType.equals("Down")){
 			Ad.swipe(181, 91, 3, 494, 2000);
@@ -267,8 +267,20 @@ public class Functions extends Driver{
 			MobileElement skiModule=null;
 			MobileElement AllergyModule=null;
 			MobileElement coldFluModule =null;
-			if(excelPage.equals("LSModule(Running)")||excelPage.equals("LSModule(Ski))")||excelPage.equals("LSModule(Boat&Beach)")) {
-				AllergyModule= Ad.findElementByXPath("//XCUIElementTypeStaticText[@name='Allergy_title']");
+			if(excelPage.equals("LSModule(Running)")||excelPage.equals("LSModule(Ski)")||excelPage.equals("LSModule(Boat & Beach)")) {
+//				MobileElement lsContainer = Ad.findElementByName("lifestyle_combo_container");
+//				List<MobileElement> Headings = lsContainer.findElementsByClassName("XCUIElementTypeStaticText");
+//				for(MobileElement lsModule :Headings) {
+//
+//					System.out.println("Module is  : "+lsModule.getAttribute("value"));
+//					if(lsModule.getAttribute("value").contains("Cold & Flu")){
+//						//Navigater=lsModule;
+//						coldFluModule =lsModule;
+//					}else if(lsModule.getAttribute("value").contains("Ski")) {
+//						skiModule =lsModule;
+//					}
+//				}
+
 				skiModule= Ad.findElementByXPath("//XCUIElementTypeStaticText[@name='ski_title']");
 				coldFluModule = Ad.findElementByXPath("//XCUIElementTypeStaticText[@name='coldAndFlu_title']");
 				//			}else if(excelPage.equals("LSModule(Boat&Beach)")){
@@ -287,7 +299,7 @@ public class Functions extends Driver{
 			int coldX=coldFluPoint.getX();
 			int coldY=coldFluPoint.getY();
 			//action.press(skiX,skiY).waitAction(1000).moveTo(coldX,coldY).release().perform();
-			Ad.swipe(skiX, skiY, coldX, coldY, 2000);
+			Ad.swipe(skiX-40, skiY, coldX, coldY, 3000);
 			//Ad.swipe(skiX, skiY, coldX, coldY, 2000);
 		}else {
 			Ad.swipe(340, 657, -318, -1, 2000);
@@ -415,7 +427,14 @@ public class Functions extends Driver{
 		capabilities.setCapability(readExcelValues.data[11][0], readExcelValues.data[11][Cap]);
 		capabilities.setCapability("--session-override",true);
 		capabilities.setCapability("bundleId","com.weather.TWC");
-		//capabilities.setCapability("xcodeConfigfile","/Users/vishal.pathania/Downloads/appium-163/node_modules/appium-xcuitest-driver/WebDriverAgent/Config.xcconfig");
+		capabilities.setCapability("sendKeyStrategy","oneByOne");
+		capabilities.setCapability("autoAcceptAlerts",true);
+		capabilities.setCapability("preventWDAAttachments",true);
+		//capabilities.setCapability("startIWDP",true);
+		capabilities.setCapability("useJSONSource",true);
+		//capabilities.setCapability("useJSONSource",true);
+
+
 		//capabilities.setCapability("xcodeSigningId","iPhone Developer");
 		//capabilities.setCapability("locationServicesEnabled", false);
 		//capabilities.setCapability("realDeviceLogger", "/Users/vishal.pathania/node_modules/deviceconsole/deviceconsole");
@@ -832,11 +851,12 @@ public class Functions extends Driver{
 			logStep("Addrerss specified, So Testing continue on - " + Zip.toString());
 			System.out.println("Zip code is : "+Zip);
 			String[]CityName=Zip.split(",");
-			for(int i=1;i<=2;i++){
+			for(int i=1;i<=1;i++){
 				if(Zip.equals("null")){
 
 					System.out.println("Please verify ads on current location and Ad type is : "+readExcelValues.data[11][Cap]);
 					logStep("Addrerss not specified, So Testing continue on current location");
+					//break;
 				}else{
 					System.out.println("Please verify ads on specified location / Zip "+readExcelValues.data[10][Cap]+" and Ad type is : "+readExcelValues.data[11][Cap]);
 					Ad.findElementByName(readExcelValues.data[1][Cap]).click();
@@ -865,7 +885,7 @@ public class Functions extends Driver{
 					if(ChangedAddress.equalsIgnoreCase(Zip)){
 						System.out.println(Zip+ "-  Address selected");
 						logStep(Zip+ "-  Address selected");
-						
+
 						break;
 					}
 				}catch(Exception e){
@@ -1317,7 +1337,7 @@ public class Functions extends Driver{
 				System.out.println("User on Home screen finding Feed_"+feed);
 			}else{
 				logStep("Swip for feed_"+feed+" ad");
-				
+
 				Functions.scroll_Down();
 				System.out.println("User on Home screen finding Feed_"+feed);
 			}
@@ -1374,7 +1394,7 @@ public class Functions extends Driver{
 						}
 					}else {
 						logStep("Verifing for feed_"+feed+" ad");
-					AdView = Ad.findElementByXPath("//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeCollectionView[1]/XCUIElementTypeCell["+CelView+"]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]");
+						AdView = Ad.findElementByXPath("//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeCollectionView[1]/XCUIElementTypeCell["+CelView+"]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]");
 						logStep("Verifed for feed_"+feed+" ad");
 					}
 					//System.out.println("Feed_"+feed+" Ad present on the screen and Size is : "+AdView.getSize());
@@ -2955,47 +2975,63 @@ public class Functions extends Driver{
 		if(ElemntType.contains("name")){
 			Thread.sleep(5000);
 			MobileElement Navigater=null;
-			for(int k=1;k<=3;k++) {
-				try{
-					if(Pagename.equals("News")){
-						try {
-							Navigater=Ad.findElementByName("news_article_cell_0");
-						}catch(Exception e) {
-							Navigater=Ad.findElementById("news_article_thumbnail_0");
-						}
-					}else if(excelPage.equals("LSModule(OutDoor)")||excelPage.equals("LSModule(Ski)")||excelPage.equals("LSModule(Running)")||excelPage.equals("LSModule(Boat&Beach")||excelPage.equals("LSModule(ColdAndFlu)"))
-					{
-						Navigater = Ad.findElementByAccessibilityId(readExcelValues.data[5][Cap]);
-					}else{
-						Navigater = Ad.findElementByXPath(readExcelValues.data[5][Cap]);
-					}
-					if(Navigater.isDisplayed()){
-						//Ad.findElementByName(readExcelValues.data[5][Cap]
-						Navigater.click();
-						break;
+			outer:
+				for(int k=1;k<=3;k++) {
+					try{
+						if(Pagename.equals("News")){
+							try {
+								Navigater=Ad.findElementByName("news_article_cell_0");
+							}catch(Exception e) {
+								Navigater=Ad.findElementById("news_article_thumbnail_0");
+							}
+						}else if(excelPage.equals("LSModule(Cold & Flu)")||excelPage.equals("LSModule(OutDoor)")||excelPage.equals("LSModule(Ski)")||excelPage.equals("LSModule(Running)")||excelPage.equals("LSModule(Boat & Beach"))
+						{
+							if(excelPage.equals("LSModule(Ski)")||excelPage.equals("LSModule(Running)")||excelPage.equals("LSModule(Boat & Beach"))
+							{
+								Functions.swipe("right-to-left");    
+							}
+							MobileElement lsContainer = Ad.findElementByName("lifestyle_combo_container");
+							List<MobileElement> Headings = lsContainer.findElementsByClassName("XCUIElementTypeStaticText");
+							for(MobileElement lsModule :Headings) {
 
-					}else {
+								System.out.println("Module is  : "+lsModule.getAttribute("value"));
+								if(excelPage.contains(lsModule.getAttribute("value"))){
+									//Navigater=lsModule;
+									lsModule.click();
+									break outer;
+								}
+							}
+
+						}else{
+							Navigater = Ad.findElementByXPath(readExcelValues.data[5][Cap]);
+						}
+						if(Navigater.isDisplayed()){
+							//Ad.findElementByName(readExcelValues.data[5][Cap]
+							Navigater.click();
+							break;
+
+						}else {
+							if(excelPage.equals("LSModule(OutDoor)")||excelPage.equals("LSModule(Ski)")||excelPage.equals("LSModule(Running)")||excelPage.equals("LSModule(Boat&Beach"))
+							{
+								Functions.swipe("right-to-left");	
+							}else {
+								scroll_Down();
+							}
+						}
+					}catch(Exception e){
 						if(excelPage.equals("LSModule(OutDoor)")||excelPage.equals("LSModule(Ski)")||excelPage.equals("LSModule(Running)")||excelPage.equals("LSModule(Boat&Beach"))
 						{
 							Functions.swipe("right-to-left");	
+						}else if(excelPage.equals("WinterStorm")){
+
+
 						}else {
 							scroll_Down();
+							Navigater.click();
 						}
+
 					}
-				}catch(Exception e){
-					if(excelPage.equals("LSModule(OutDoor)")||excelPage.equals("LSModule(Ski)")||excelPage.equals("LSModule(Running)")||excelPage.equals("LSModule(Boat&Beach"))
-					{
-						Functions.swipe("right-to-left");	
-					}else if(excelPage.equals("WinterStorm")){
-
-
-					}else {
-						scroll_Down();
-						Navigater.click();
-					}
-
 				}
-			}
 
 			logStep("Navigated to detaile page");
 		}else if(ElemntType.contains("xpath")){
@@ -3217,7 +3253,7 @@ public class Functions extends Driver{
 			}
 
 			Functions.Navigate_extendedPages(Pagename);
-			if(Pagename.equals("LSModule(Allergy)")||Pagename.equals("LSModule(ColdAndFlu)")||Pagename.equals("LSModule(Boat&Beach)")){
+			if(Pagename.equals("LSModule(Ski)")||Pagename.equals("LSModule(Allergy)")||Pagename.equals("LSModule(Cold & Flu)")||Pagename.equals("LSModule(Boat & Beach)")){
 				Functions.Swipe();
 				Functions.Swipe();				
 				System.out.println("Page scrolled for add");

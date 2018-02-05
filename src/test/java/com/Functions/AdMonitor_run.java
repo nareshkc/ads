@@ -119,7 +119,7 @@ public class AdMonitor_run extends Driver {
 		logStep("Validating News detail page ad");
 		ExecutableFunctions.Function_extened_NewsPage_ads();
 	}
-	/*@Test(priority=10)
+	@Test(priority=10)
 	//Execute method for Lifestyle combo - Cold & Flu page ad Validation
 	public void healthPage_cold_Flu_Ad_Validations()throws Exception{
 		System.out.println("*********************** Started Validating LS_Cold and Flu Detail page ads ****************");
@@ -127,13 +127,13 @@ public class AdMonitor_run extends Driver {
 		try {
 		Functions.enternewAddress("Bridgeton, New Jersey");
 		Thread.sleep(8000); 
-		ExecutableFunctions.Function_extened_LSModule_ads("LSModule(ColdAndFlu)");
+		ExecutableFunctions.Function_extened_LSModule_ads("LSModule(Col & Flu)");
 		}catch(Exception e) {
 			logStep("app closed suddenly trying to restart and Validating LS_Cold and Flu detail page ad");
 			Functions.close_launchApp();
 			Functions.enternewAddress("Bridgeton, New Jersey");
 			Thread.sleep(8000); 
-			ExecutableFunctions.Function_extened_LSModule_ads("LSModule(ColdAndFlu)");
+			ExecutableFunctions.Function_extened_LSModule_ads("LSModule(Cold & Flu)");
 		}
 	}
 	@Test(priority=11)
@@ -162,7 +162,7 @@ public class AdMonitor_run extends Driver {
 	public void healthPage_Boat_Beach_Ad_Validations()throws Exception{
 		System.out.println("*********************** Started Validating Ls_Boat_Beach Detail page ads ****************");
 		logStep("Validating  Ls_Boat_Beach detail page ad");
-		ExecutableFunctions.Function_extened_LSModule_ads("LSModule(Boat&Beach)");
+		ExecutableFunctions.Function_extened_LSModule_ads("LSModule(Boat & Beach)");
 	}
 	@Test(priority=15,enabled=false)
 	//Execute method for native ad Validation
@@ -171,7 +171,7 @@ public class AdMonitor_run extends Driver {
 		Functions.Setappinto_TestMode("Select");
 		Functions.Setappinto_TestMode("nativeAd");
 		ExecutableFunctions.Function_validate_BB_ads("nativeAd");
-	}*/
+	}
 	@Test(priority=16)
 	//Execute method for nativeBB-ad Validation
 	public void nativBB_Validations()throws Exception{
