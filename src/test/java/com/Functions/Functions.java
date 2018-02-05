@@ -2986,7 +2986,7 @@ public class Functions extends Driver{
 							}
 						}else if(excelPage.equals("LSModule(Cold & Flu)")||excelPage.equals("LSModule(OutDoor)")||excelPage.equals("LSModule(Ski)")||excelPage.equals("LSModule(Running)")||excelPage.equals("LSModule(Boat & Beach"))
 						{
-							if(excelPage.equals("LSModule(Ski)")||excelPage.equals("LSModule(Running)")||excelPage.equals("LSModule(Boat & Beach"))
+							if(excelPage.equals("LSModule(Ski)"))
 							{
 								Functions.swipe("right-to-left");    
 							}
