@@ -2984,7 +2984,7 @@ public class Functions extends Driver{
 							}catch(Exception e) {
 								Navigater=Ad.findElementById("news_article_thumbnail_0");
 							}
-						}else if(excelPage.equals("LSModule(Cold & Flu)")||excelPage.equals("LSModule(OutDoor)")||excelPage.equals("LSModule(Ski)")||excelPage.equals("LSModule(Running)")||excelPage.equals("LSModule(Boat & Beach"))
+						}else if(excelPage.equals("LSModule(Cold & Flu)")||excelPage.equals("LSModule(OutDoor)")||excelPage.equals("LSModule(Ski)")||excelPage.equals("LSModule(Running)")||excelPage.equals("LSModule(Boat & Beach)"))
 						{
 							if(excelPage.equals("LSModule(Ski)"))
 							{
