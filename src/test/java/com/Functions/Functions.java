@@ -3338,7 +3338,7 @@ public class Functions extends Driver{
 				System.out.println("Size of the ad is ::"+ActualSize);
 				System.out.println("Height  of the ad is ::"+ActualSize.getHeight());
 				System.out.println("Width of the ad is ::"+ActualSize.getWidth());
-				if(ActualSize.getHeight() == y && ActualSize.getWidth()==x){
+				if((ActualSize.getHeight() == y && ActualSize.getWidth()==x)||(ActualSize.getHeight() == y+1 && ActualSize.getWidth()==x)||(ActualSize.getHeight() == y && ActualSize.getWidth()==x+1)||(ActualSize.getHeight() == y+1 && ActualSize.getWidth()==x+1)){
 
 					System.out.println("Ad present on Extended"+ Pagename +"page");
 					System.out.println("Ad sizes are matched");
