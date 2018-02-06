@@ -164,14 +164,14 @@ public class AdMonitor_run extends Driver {
 		logStep("Validating  Ls_Boat_Beach detail page ad");
 		ExecutableFunctions.Function_extened_LSModule_ads("LSModule(Boat & Beach)");
 	}
-	@Test(priority=15,enabled=false)
+	/*@Test(priority=15,enabled=false)
 	//Execute method for native ad Validation
 	public void nativAd_Validations()throws Exception{
 		System.out.println("*********************** Started Validating Native ad ****************");
 		Functions.Setappinto_TestMode("Select");
 		Functions.Setappinto_TestMode("nativeAd");
 		ExecutableFunctions.Function_validate_BB_ads("nativeAd");
-	}
+	}*/
 	@Test(priority=16)
 	//Execute method for nativeBB-ad Validation
 	public void nativBB_Validations()throws Exception{
