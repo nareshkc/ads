@@ -127,7 +127,7 @@ public class AdMonitor_run extends Driver {
 		try {
 		Functions.enternewAddress("Bridgeton, New Jersey");
 		Thread.sleep(8000); 
-		ExecutableFunctions.Function_extened_LSModule_ads("LSModule(Col & Flu)");
+		ExecutableFunctions.Function_extened_LSModule_ads("LSModule(Cold & Flu)");
 		}catch(Exception e) {
 			logStep("app closed suddenly trying to restart and Validating LS_Cold and Flu detail page ad");
 			Functions.close_launchApp();
