@@ -3253,11 +3253,11 @@ public class Functions extends Driver{
 			}
 
 			Functions.Navigate_extendedPages(Pagename);
-			if(Pagename.equals("LSModule(Ski)")||Pagename.equals("LSModule(Allergy)")||Pagename.equals("LSModule(Cold & Flu)")){
+			if(Pagename.equals("LSModule(Ski)")||Pagename.equals("LSModule(Allergy)")){
 				Functions.Swipe();
 				Functions.Swipe();				
 				System.out.println("Page scrolled for add");
-			}else if(Pagename.equals("LSModule(Running)")||Pagename.equals("LSModule(Boat & Beach)")){
+			}else if(Pagename.equals("LSModule(Running)")||Pagename.equals("LSModule(Boat & Beach)")||Pagename.equals("LSModule(Cold & Flu)")){
 				Functions.Swipe();
 				Functions.Swipe();
 				Functions.Swipe();
