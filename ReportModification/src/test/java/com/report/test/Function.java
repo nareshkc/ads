@@ -1,21 +1,15 @@
-/**
- * 
- */
-package com.report.test;
 
-import org.zeroturnaround.zip.ZipUtil;
+package com.reports.reports;
+
+
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import org.apache.commons.io.FileUtils;
+import org.zeroturnaround.zip.ZipUtil;
 
 
-
-/**
- * @author Naresh
- *
- */
 public class Function {
 	static List<String> filesListInDir = new ArrayList<String>();
 	static String destDir =null;
@@ -27,9 +21,9 @@ public class Function {
 	 //UnZip And Zip Folder
 	 public static void zipfolder(String ExecutionType) throws Exception {
 		 ByteArrayOutputStream actualOs = new ByteArrayOutputStream(1024);
-		 String zipFolder ="/Users/macmini/.jenkins/jobs/iOS_ARMS/builds/"+BuildNo+"/archive/allure-report";
-		 String zipFile ="/Users/macmini/.jenkins/jobs/iOS_ARMS/builds/"+BuildNo+"/archive/allure-report.zip";
-		 String DestDir = "/Users/macmini/.jenkins/jobs/iOS_ARMS/builds/"+BuildNo+"/archive";
+		 String zipFolder ="/Users/macmini/.jenkins/jobs/Android-ARMS_Automation/builds/"+BuildNo+"/archive/allure-report";
+		 String zipFile ="/Users/macmini/.jenkins/jobs/Android-ARMS_Automation/builds/"+BuildNo+"/archive/allure-report.zip";
+		 String DestDir = "/Users/macmini/.jenkins/jobs/Android-ARMS_Automation/builds/"+BuildNo+"/archive";
 		 // execute test
 		 if(ExecutionType.equals("unzip")) {
 			 ZipUtil.unpack(new File(zipFile), new File(DestDir));
@@ -46,7 +40,7 @@ public class Function {
 	 
 	 //Delete zip file
 	 public static void DeleteFiles() {
-		    File file = new File("/Users/macmini/.jenkins/jobs/iOS_ARMS/builds/"+BuildNo+"/archive/allure-report");
+		    File file = new File("/Users/macmini/.jenkins/jobs/Android-ARMS_Automation/builds/"+BuildNo+"/archive/allure-report");
 		    System.out.println("Called deleteFiles");
 		    if (file.isDirectory()) {
 		        for (File f : file.listFiles()) {
@@ -79,7 +73,8 @@ public class Function {
 			String projDir = System.getProperty("user.dir");
 			File sourceFile,destinationFile = null;
 			String Destination_File=null;
-			String SourcePath="/Users/macmini/.jenkins/workspace/ReportModify_iOS/Allure_Style/";
+			String SourcePath="/Users/macmini/.jenkins/workspace/Report_Android/ReportModification/Allure_Style/";
+					//"/Users/macmini/.jenkins/workspace/ReportModify_Android/Allure_Style/";
 			String DestinationPath=destDir+"allure-report/";
 			List<String> get_content_file_name = listFiles(SourcePath);
 			String Filename=null;
@@ -108,6 +103,5 @@ public class Function {
 
 			}
 		}
-	
-
 }
+	
