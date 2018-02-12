@@ -19,7 +19,7 @@ public class execute {
 	public void beforeClass() {
 		System.out.println("Report Execution Started");
 		WebDriver driver= new FirefoxDriver();
-		driver.get("http://localhost:8089/job/iOS_ARMS/allure/");
+		driver.get("http://localhost:8089/job/iOS_ARMS_Automation/allure/");
 		driver.manage().window().maximize();
 		WebElement Build= driver.findElement(By.xpath("//*[@id='content']/div/div[2]/div/div[2]/div[3]/div[2]/div/div/span/div[2]/a"));
 		Function.BuildNo =   Build.getText().replaceAll("iOS_ARMS #", "");

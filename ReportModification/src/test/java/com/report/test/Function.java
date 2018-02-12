@@ -10,8 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 import org.apache.commons.io.FileUtils;
 
-
-
 /**
  * @author Naresh
  *
@@ -27,9 +25,9 @@ public class Function {
 	 //UnZip And Zip Folder
 	 public static void zipfolder(String ExecutionType) throws Exception {
 		 ByteArrayOutputStream actualOs = new ByteArrayOutputStream(1024);
-		 String zipFolder ="/Users/macmini/.jenkins/jobs/iOS_ARMS/builds/"+BuildNo+"/archive/allure-report";
-		 String zipFile ="/Users/macmini/.jenkins/jobs/iOS_ARMS/builds/"+BuildNo+"/archive/allure-report.zip";
-		 String DestDir = "/Users/macmini/.jenkins/jobs/iOS_ARMS/builds/"+BuildNo+"/archive";
+		 String zipFolder ="/Users/macmini/.jenkins/jobs/iOS_ARMS_Automation/builds/"+BuildNo+"/archive/allure-report";
+		 String zipFile ="/Users/macmini/.jenkins/jobs/iOS_ARMS_Automation/builds/"+BuildNo+"/archive/allure-report.zip";
+		 String DestDir = "/Users/macmini/.jenkins/jobs/iOS_ARMS_Automation/builds/"+BuildNo+"/archive";
 		 // execute test
 		 if(ExecutionType.equals("unzip")) {
 			 ZipUtil.unpack(new File(zipFile), new File(DestDir));
@@ -46,7 +44,7 @@ public class Function {
 	 
 	 //Delete zip file
 	 public static void DeleteFiles() {
-		    File file = new File("/Users/macmini/.jenkins/jobs/iOS_ARMS/builds/"+BuildNo+"/archive/allure-report");
+		    File file = new File("/Users/macmini/.jenkins/jobs/iOS_ARMS_Automation/builds/"+BuildNo+"/archive/allure-report");
 		    System.out.println("Called deleteFiles");
 		    if (file.isDirectory()) {
 		        for (File f : file.listFiles()) {
