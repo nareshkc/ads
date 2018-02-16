@@ -2,6 +2,9 @@ package com.report.test;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,25 +12,41 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 
 public class execute {
+	ArrayList<String> builds = new ArrayList<String>();
+	WebDriver driver=null;
+	
 	@Test
 	public void executer() throws Exception {
+		for(int browser =0; browser<=1;browser++) {
+			driver =new FirefoxDriver();
+			if(browser==0) {
+				Function.ProjectName="iOS_ARMS_Automation";
+			}if(browser==1) {
+				Function.ProjectName="iOS_CustomParams_Automation";
+			}
+				
+				driver.get("http://localhost:8089/job/"+Function.ProjectName+"/allure/");
+				driver.manage().window().maximize();
+				WebElement Build= driver.findElement(By.xpath("//*[@id='content']/div/div[2]/div/div[2]/div[3]/div[2]/div/div/span/div[2]/a"));
+				Function.BuildNo =   Build.getText().replaceAll(Function.ProjectName+" #", "");
+
+			
+		System.out.println("Execution on Build : "+Function.BuildNo);
+		Function.destDir= "/Users/macmini/.jenkins/jobs/"+Function.ProjectName+"/builds/"+Function.BuildNo+"/archive/";
+		String zipFilePath="/Users/macmini/.jenkins/jobs/"+Function.ProjectName+"/builds/"+Function.BuildNo+"/archive/allure-report.zip";
+
+		driver.close();
 		Function.zipfolder("unzip");
 		Function.move_Files("Allure_Style");
 		Function.zipfolder("zip");
+			
+		}
 	}
 	@BeforeClass
 	public void beforeClass() {
 		System.out.println("Report Execution Started");
-		WebDriver driver= new FirefoxDriver();
-		driver.get("http://localhost:8089/job/iOS_ARMS_Automation/allure/");
-		driver.manage().window().maximize();
-		WebElement Build= driver.findElement(By.xpath("//*[@id='content']/div/div[2]/div/div[2]/div[3]/div[2]/div/div/span/div[2]/a"));
-		Function.BuildNo =   Build.getText().replaceAll("iOS_ARMS_Automation #", "");
-		System.out.println("Execution on Build : "+Function.BuildNo);
-		Function.destDir= "/Users/macmini/.jenkins/jobs/iOS_ARMS_Automation/builds/"+Function.BuildNo+"/archive/";
-		String zipFilePath="/Users/macmini/.jenkins/jobs/iOS_ARMS_Automation/builds/"+Function.BuildNo+"/archive/allure-report.zip";
+		
 
-		driver.close();
 	}
 
 	@AfterClass
