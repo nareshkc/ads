@@ -23,6 +23,8 @@ public class execute {
 				Function.ProjectName="iOS_ARMS_Automation";
 			}if(browser==1) {
 				Function.ProjectName="iOS_CustomParams_Automation";
+			}if(browser==2) {
+				Function.ProjectName="iOS_Smoke_Automation";
 			}
 				
 				driver.get("http://localhost:8089/job/"+Function.ProjectName+"/allure/");
