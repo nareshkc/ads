@@ -17,7 +17,7 @@ public class execute {
 	
 	@Test
 	public void executer() throws Exception {
-		for(int browser =0; browser<=1;browser++) {
+		for(int browser =0; browser<=2;browser++) {
 			driver =new FirefoxDriver();
 			if(browser==0) {
 				Function.ProjectName="iOS_ARMS_Automation";
