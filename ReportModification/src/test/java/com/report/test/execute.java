@@ -14,17 +14,23 @@ import org.testng.annotations.AfterClass;
 public class execute {
 	ArrayList<String> builds = new ArrayList<String>();
 	WebDriver driver=null;
+	public static String changeReport=null;
+	public static String widgets = null;
 	
 	@Test
 	public void executer() throws Exception {
-		for(int browser =0; browser<=1;browser++) {
+		for(int browser =0; browser<=2;browser++) {
 			driver =new FirefoxDriver();
 			if(browser==0) {
 				Function.ProjectName="iOS_ARMS_Automation";
+				changeReport = "iOS_ARMS_Automation";
 			}if(browser==1) {
 				Function.ProjectName="iOS_CustomParams_Automation";
+				changeReport = "iOS_CustomParams_Automation";
 			}if(browser==2) {
 				Function.ProjectName="iOS_Smoke_Automation";
+				changeReport = "iOS_Smoke_Automation";
+				
 			}
 				
 				driver.get("http://localhost:8089/job/"+Function.ProjectName+"/allure/");
@@ -36,7 +42,7 @@ public class execute {
 		System.out.println("Execution on Build : "+Function.BuildNo);
 		Function.destDir= "/Users/macmini/.jenkins/jobs/"+Function.ProjectName+"/builds/"+Function.BuildNo+"/archive/";
 		String zipFilePath="/Users/macmini/.jenkins/jobs/"+Function.ProjectName+"/builds/"+Function.BuildNo+"/archive/allure-report.zip";
-
+		widgets="/Users/macmini/.jenkins/jobs/"+changeReport+"/builds/"+Function.BuildNo+"/archive/allure-report/data/";
 		driver.close();
 		Function.zipfolder("unzip");
 		Function.move_Files("Allure_Style");
