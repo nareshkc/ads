@@ -33,9 +33,10 @@ public class ChangeAllure {
 
 			for(int i=1;i<=changeCount;i++) {
 				jsonObject = (JSONObject)object;
-				if(JsonName.equals("widgets")) {
-					//jsonObject=(JSONObject)jsonObject.get("summary");
-					if(execute.changeReport.equals("iOS_ARMS_Automation") ||execute.changeReport.equals("iOS_CustomParams_Automation")) {
+				if(execute.changeReport.equals("iOS_ARMS_Automation") ||execute.changeReport.equals("iOS_CustomParams_Automation")) {
+					if(JsonName.equals("widgets")) {
+						//jsonObject=(JSONObject)jsonObject.get("summary");
+
 						jsonObject=(JSONObject)jsonObject.get("summary");
 						jsonObject.put("reportName", execute.changeReport+"_Report");
 						finalJson=object.toString();
@@ -43,9 +44,11 @@ public class ChangeAllure {
 						FileWriter FW = new FileWriter(FilePath);
 						FW.write(object.toString());
 						FW.flush();
-					}else if(execute.changeReport.equals("iOS_Smoke_Automation")) {
 
+					}
+				}else if(execute.changeReport.equals("iOS_Smoke_Automation")) {
 
+					if(JsonName.equals("widgets")) {
 
 						if(i==1) {
 							jsonObject=(JSONObject)jsonObject.get("summary");
@@ -59,38 +62,38 @@ public class ChangeAllure {
 							jsonArray=(JSONArray)jsonObject.get("items");
 							jsonObject=(JSONObject) jsonArray.get(0);
 						}
+
+					}else if(JsonName.equals("xunit")) {
+						jsonArray=(JSONArray)jsonObject.get("testSuites");
+						jsonObject=(JSONObject) jsonArray.get(0);
 					}
-				}else if(JsonName.equals("xunit")) {
-					jsonArray=(JSONArray)jsonObject.get("testSuites");
-					jsonObject=(JSONObject) jsonArray.get(0);
+
+					jsonObject=(JSONObject)jsonObject.get("statistic");
+					String broken = jsonObject.get("broken").toString();
+					String skipped = jsonObject.get("skipped").toString();
+					String unknown = jsonObject.get("unknown").toString();
+					String total = jsonObject.get("total").toString();
+					System.out.println("broken tests are : "+broken );
+					broke=Integer.parseInt(broken);
+					System.out.println("skipped tests are : "+skipped );
+					skip=Integer.parseInt(skipped);
+					System.out.println("broken tests are : "+unknown );
+					other=Integer.parseInt(unknown);
+					totaljson =Integer.parseInt(total);
+					cancled=broke+skip+other;
+					totaljson=totaljson-cancled;
+					jsonObject.put("broken", broke-broke);
+					jsonObject.put("skip", skip-skip);
+					jsonObject.put("unknown", other-other);
+					jsonObject.put("total", totaljson);
+					finalJson=object.toString();
+					@SuppressWarnings("resource")
+					FileWriter FW = new FileWriter(FilePath);
+					FW.write(object.toString());
+					FW.flush();
+
 				}
-
-				jsonObject=(JSONObject)jsonObject.get("statistic");
-				String broken = jsonObject.get("broken").toString();
-				String skipped = jsonObject.get("skipped").toString();
-				String unknown = jsonObject.get("unknown").toString();
-				String total = jsonObject.get("total").toString();
-				System.out.println("broken tests are : "+broken );
-				broke=Integer.parseInt(broken);
-				System.out.println("skipped tests are : "+skipped );
-				skip=Integer.parseInt(skipped);
-				System.out.println("broken tests are : "+unknown );
-				other=Integer.parseInt(unknown);
-				totaljson =Integer.parseInt(total);
-				cancled=broke+skip+other;
-				totaljson=totaljson-cancled;
-				jsonObject.put("broken", broke-broke);
-				jsonObject.put("skip", skip-skip);
-				jsonObject.put("unknown", other-other);
-				jsonObject.put("total", totaljson);
-				finalJson=object.toString();
-				@SuppressWarnings("resource")
-				FileWriter FW = new FileWriter(FilePath);
-				FW.write(object.toString());
-				FW.flush();
-
 			}
-
 		}catch(Exception e) {
 
 		}
