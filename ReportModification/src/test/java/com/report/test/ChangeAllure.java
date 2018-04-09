@@ -16,6 +16,7 @@ public class ChangeAllure {
 	public static int totaljson;
 	public static String  finalJson;
 	static public JSONParser parser = new JSONParser();
+public static String widgets =null;
 
 
 	@SuppressWarnings("unchecked")
@@ -25,19 +26,21 @@ public class ChangeAllure {
 
 		try
 		{
-			String FilePath=execute.widgets+JsonName+".json";
+			String FilePath= execute.widgets+JsonName+".json";
+					//execute.widgets+JsonName+".json";
 			Object object = parser
 					.parse(new FileReader(FilePath));
 			JSONObject jsonObject=null;
 			JSONArray jsonArray = null;
-
+			System.out.println("execute.changeReport is "+execute.changeReport);
+			
 			for(int i=1;i<=changeCount;i++) {
 				jsonObject = (JSONObject)object;
 				if(execute.changeReport.equals("iOS_ARMS_Automation") ||execute.changeReport.equals("iOS_CustomParams_Automation")) {
-					if(JsonName.equals("widgets")) {
+					if(JsonName.equals("summary")) {
 						//jsonObject=(JSONObject)jsonObject.get("summary");
 
-						jsonObject=(JSONObject)jsonObject.get("summary");
+						//jsonObject=(JSONObject)jsonObject.get("summary");
 						jsonObject.put("reportName", execute.changeReport+"_Report");
 						finalJson=object.toString();
 						@SuppressWarnings("resource")
@@ -48,10 +51,10 @@ public class ChangeAllure {
 					}
 				}else if(execute.changeReport.equals("iOS_Smoke_Automation")) {
 
-					if(JsonName.equals("widgets")) {
+					if(JsonName.equals("summary")) {
 
 						if(i==1) {
-							jsonObject=(JSONObject)jsonObject.get("summary");
+							//jsonObject=(JSONObject)jsonObject.get("summary");
 							jsonObject.put("reportName", execute.changeReport+"_Report");
 						}else if(i==2) {
 							jsonObject=(JSONObject)jsonObject.get("behaviors");
@@ -102,7 +105,8 @@ public class ChangeAllure {
 	public static void main(String[] args) {
 
 		// TODO Auto-generated method stub
-		changeJson("widgets",3);
+		 widgets="/Users/macmini/.jenkins/jobs/iOS_CustomParams_Automation/builds/116/archive/allure-report/widgets/";
+		changeJson("summary",3);
 		//changeJson("xunit",1);
 	}
 

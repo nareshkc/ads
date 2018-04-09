@@ -42,7 +42,7 @@ public class execute {
 		System.out.println("Execution on Build : "+Function.BuildNo);
 		Function.destDir= "/Users/macmini/.jenkins/jobs/"+Function.ProjectName+"/builds/"+Function.BuildNo+"/archive/";
 		String zipFilePath="/Users/macmini/.jenkins/jobs/"+Function.ProjectName+"/builds/"+Function.BuildNo+"/archive/allure-report.zip";
-		widgets="/Users/macmini/.jenkins/jobs/"+changeReport+"/builds/"+Function.BuildNo+"/archive/allure-report/data/";
+		widgets="/Users/macmini/.jenkins/jobs/"+changeReport+"/builds/"+Function.BuildNo+"/archive/allure-report/widgets/";
 		driver.close();
 		Function.zipfolder("unzip");
 		Function.move_Files("Allure_Style");
