@@ -36,7 +36,7 @@ public static String widgets =null;
 			
 			for(int i=1;i<=changeCount;i++) {
 				jsonObject = (JSONObject)object;
-				if(execute.changeReport.equals("iOS_ARMS_Automation") ||execute.changeReport.equals("iOS_CustomParams_Automation")) {
+				if(execute.changeReport.equals("iOS_ARMS_Automation") ||execute.changeReport.equals("iOS_Regression_Automation")) {
 					if(JsonName.equals("summary")) {
 						//jsonObject=(JSONObject)jsonObject.get("summary");
 
@@ -105,7 +105,7 @@ public static String widgets =null;
 	public static void main(String[] args) {
 
 		// TODO Auto-generated method stub
-		 widgets="/Users/macmini/.jenkins/jobs/iOS_CustomParams_Automation/builds/116/archive/allure-report/widgets/";
+		 widgets="/Users/macmini/.jenkins/jobs/iOS_Regression_Automation/builds/116/archive/allure-report/widgets/";
 		changeJson("summary",3);
 		//changeJson("xunit",1);
 	}
