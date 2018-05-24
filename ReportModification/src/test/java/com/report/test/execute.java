@@ -25,8 +25,8 @@ public class execute {
 				Function.ProjectName="iOS_ARMS_Automation";
 				changeReport = "iOS_ARMS_Automation";
 			}if(browser==1) {
-				Function.ProjectName="iOS_CustomParams_Automation";
-				changeReport = "iOS_CustomParams_Automation";
+				Function.ProjectName="iOS_Regression_Automation";
+				changeReport = "iOS_Regression_Automation";
 			}if(browser==2) {
 				Function.ProjectName="iOS_Smoke_Automation";
 				changeReport = "iOS_Smoke_Automation";
