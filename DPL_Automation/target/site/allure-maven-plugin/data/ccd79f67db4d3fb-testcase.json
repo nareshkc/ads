@@ -1,0 +1,317 @@
+{
+  "uid" : "ccd79f67db4d3fb",
+  "name" : "submitReciept",
+  "title" : "Submit Receipt Bucket",
+  "time" : {
+    "start" : 1537449271277,
+    "stop" : 1537449302943,
+    "duration" : 31666
+  },
+  "summary" : {
+    "attachments" : 4,
+    "steps" : 16
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "Search with application number in Receipt and fill requierd data and submit ",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "e9e455ec9ea5c9e1",
+    "name" : "Suite : TestLASTPPass",
+    "title" : "Suite : TestLASTPPass"
+  },
+  "steps" : [ {
+    "name" : "logStep[Taking screenshot]",
+    "title" : "Taking screenshot",
+    "time" : {
+      "start" : 1537449273685,
+      "stop" : 1537449273685,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Clicked on inbox button for selecting : inBox]",
+    "title" : "Clicked on inbox button for selecting : inBox",
+    "time" : {
+      "start" : 1537449273959,
+      "stop" : 1537449273959,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[clicked on : Receipt]",
+    "title" : "clicked on : Receipt",
+    "time" : {
+      "start" : 1537449276109,
+      "stop" : 1537449276109,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Taking screenshot]",
+    "title" : "Taking screenshot",
+    "time" : {
+      "start" : 1537449276110,
+      "stop" : 1537449276110,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Entered text is :MNB9040120]",
+    "title" : "Entered text is :MNB9040120",
+    "time" : {
+      "start" : 1537449282989,
+      "stop" : 1537449282989,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Clicked on Proposal numMNB9040120]",
+    "title" : "Clicked on Proposal numMNB9040120",
+    "time" : {
+      "start" : 1537449285203,
+      "stop" : 1537449285203,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Selected Branch is : HO]",
+    "title" : "Selected Branch is : HO",
+    "time" : {
+      "start" : 1537449287466,
+      "stop" : 1537449287466,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Selected option is : HO - SBI]",
+    "title" : "Selected option is : HO - SBI",
+    "time" : {
+      "start" : 1537449289755,
+      "stop" : 1537449289755,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Clicked on AddInstrument button]",
+    "title" : "Clicked on AddInstrument button",
+    "time" : {
+      "start" : 1537449289841,
+      "stop" : 1537449289841,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Selected option is : Debit Cards]",
+    "title" : "Selected option is : Debit Cards",
+    "time" : {
+      "start" : 1537449292374,
+      "stop" : 1537449292374,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Selected option is : Yes]",
+    "title" : "Selected option is : Yes",
+    "time" : {
+      "start" : 1537449292498,
+      "stop" : 1537449292498,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Selected option is : Available]",
+    "title" : "Selected option is : Available",
+    "time" : {
+      "start" : 1537449295234,
+      "stop" : 1537449295234,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Taking screenshot]",
+    "title" : "Taking screenshot",
+    "time" : {
+      "start" : 1537449295468,
+      "stop" : 1537449295468,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[clicked on create receipt button]",
+    "title" : "clicked on create receipt button",
+    "time" : {
+      "start" : 1537449296038,
+      "stop" : 1537449296038,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Taking screenshot]",
+    "title" : "Taking screenshot",
+    "time" : {
+      "start" : 1537449296081,
+      "stop" : 1537449296081,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Click on Next button ]",
+    "title" : "Click on Next button ",
+    "time" : {
+      "start" : 1537449300809,
+      "stop" : 1537449300809,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ {
+    "title" : "Screenshot",
+    "source" : "3cced528-9e93-41b2-8177-b122031ea2af-attachment.png",
+    "type" : "image/png",
+    "size" : 29709,
+    "uid" : "d5ee5841cb9c83bf"
+  }, {
+    "title" : "Screenshot",
+    "source" : "7cb0d211-4ed7-4ee9-a1d1-919327aa51c4-attachment.png",
+    "type" : "image/png",
+    "size" : 55274,
+    "uid" : "6ae06e96404d8916"
+  }, {
+    "title" : "Screenshot",
+    "source" : "34ec2f25-477c-4090-8679-a0f29467f275-attachment.png",
+    "type" : "image/png",
+    "size" : 68266,
+    "uid" : "317377840e109d6b"
+  }, {
+    "title" : "Screenshot",
+    "source" : "d2de0a69-0353-4b01-8ed8-5d19f354cc90-attachment.png",
+    "type" : "image/png",
+    "size" : 67852,
+    "uid" : "9015d2a3533a931"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "LA Traditional Case (STP Pass)"
+  }, {
+    "name" : "host",
+    "value" : "MONO-HYD-LAP-14"
+  }, {
+    "name" : "thread",
+    "value" : "21916@MONO-HYD-LAP-14.main(1)"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : TestLASTPPass"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : TestLASTPPass"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  } ],
+  "parameters" : [ ]
+}

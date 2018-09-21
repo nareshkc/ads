@@ -1,0 +1,263 @@
+{
+  "uid" : "8f8535a1345f2efc",
+  "name" : "pendingBranchScrutny",
+  "title" : "Pending brach scrytny bucket",
+  "time" : {
+    "start" : 1537449302948,
+    "stop" : 1537449321746,
+    "duration" : 18798
+  },
+  "summary" : {
+    "attachments" : 5,
+    "steps" : 12
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "Search with application number and Submit",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "e9e455ec9ea5c9e1",
+    "name" : "Suite : TestLASTPPass",
+    "title" : "Suite : TestLASTPPass"
+  },
+  "steps" : [ {
+    "name" : "logStep[Taking screenshot]",
+    "title" : "Taking screenshot",
+    "time" : {
+      "start" : 1537449305073,
+      "stop" : 1537449305073,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Clicked on inbox button for selecting : inBox]",
+    "title" : "Clicked on inbox button for selecting : inBox",
+    "time" : {
+      "start" : 1537449305361,
+      "stop" : 1537449305361,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[clicked on : pbScrutny]",
+    "title" : "clicked on : pbScrutny",
+    "time" : {
+      "start" : 1537449307479,
+      "stop" : 1537449307479,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Taking screenshot]",
+    "title" : "Taking screenshot",
+    "time" : {
+      "start" : 1537449307480,
+      "stop" : 1537449307480,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[MNB9040120 proposal num is clicked ]",
+    "title" : "MNB9040120 proposal num is clicked ",
+    "time" : {
+      "start" : 1537449312404,
+      "stop" : 1537449312404,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Clicked on Submit button]",
+    "title" : "Clicked on Submit button",
+    "time" : {
+      "start" : 1537449314550,
+      "stop" : 1537449314550,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Success---Branch Scrutiny Completed]",
+    "title" : "Success---Branch Scrutiny Completed",
+    "time" : {
+      "start" : 1537449316696,
+      "stop" : 1537449316696,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Taking screenshot]",
+    "title" : "Taking screenshot",
+    "time" : {
+      "start" : 1537449316716,
+      "stop" : 1537449316716,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Scrutny submitted succssfully  Branch Scrutiny Completed]",
+    "title" : "Scrutny submitted succssfully  Branch Scrutiny Completed",
+    "time" : {
+      "start" : 1537449317023,
+      "stop" : 1537449317023,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Taking screenshot]",
+    "title" : "Taking screenshot",
+    "time" : {
+      "start" : 1537449319048,
+      "stop" : 1537449319048,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Click on Next button ]",
+    "title" : "Click on Next button ",
+    "time" : {
+      "start" : 1537449321455,
+      "stop" : 1537449321455,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Taking screenshot]",
+    "title" : "Taking screenshot",
+    "time" : {
+      "start" : 1537449321455,
+      "stop" : 1537449321455,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ {
+    "title" : "Screenshot",
+    "source" : "1482ff69-91d2-4c32-ac27-8ab3f12fffd1-attachment.png",
+    "type" : "image/png",
+    "size" : 66361,
+    "uid" : "7e0466f43266bda2"
+  }, {
+    "title" : "Screenshot",
+    "source" : "8dca5393-91f5-48f4-899b-390ebe1523b5-attachment.png",
+    "type" : "image/png",
+    "size" : 68562,
+    "uid" : "2d0449d0cbb00a2f"
+  }, {
+    "title" : "Screenshot",
+    "source" : "468f9568-02e4-45ed-9e1e-f7970a4acc05-attachment.png",
+    "type" : "image/png",
+    "size" : 67931,
+    "uid" : "aab891a778daf84"
+  }, {
+    "title" : "Screenshot",
+    "source" : "5539b327-a997-420f-8bea-3eaa6a5106bb-attachment.png",
+    "type" : "image/png",
+    "size" : 68110,
+    "uid" : "fbfea8e4759d5020"
+  }, {
+    "title" : "Screenshot",
+    "source" : "21a33870-d9c9-44da-974a-fd8b478a99d7-attachment.png",
+    "type" : "image/png",
+    "size" : 67311,
+    "uid" : "1c340a8f2fd5e93e"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "LA Traditional Case (STP Pass)"
+  }, {
+    "name" : "host",
+    "value" : "MONO-HYD-LAP-14"
+  }, {
+    "name" : "thread",
+    "value" : "21916@MONO-HYD-LAP-14.main(1)"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : TestLASTPPass"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : TestLASTPPass"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  } ],
+  "parameters" : [ ]
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd>
+   <duplication lines="15" tokens="172">
+      <file line="50"
+            path="D:\Bhavishya\POC\Dpl_code _given _by sateesh\DPL_Automation\src\test\java\Cosmos_Testcases\LACosmosToIL.java"/>
+      <file line="49"
+            path="D:\Bhavishya\POC\Dpl_code _given _by sateesh\DPL_Automation\src\test\java\Cosmos_Testcases\LATraditionalstppass.java"/>
+      <codefragment><![CDATA[	launchBrowser(browserName);
+	homePage=PageFactory.initElements(driver, HomePage.class);
+	inBoxPage=PageFactory.initElements(driver, InBoxPage.class);
+	receiptPage=PageFactory.initElements(driver, ReceiptPage.class);
+	poposalDetails=PageFactory.initElements(driver, ProposalDetails.class);
+	pbScrutny=PageFactory.initElements(driver, PendingbranchScrutny.class);
+	scanindex=PageFactory.initElements(driver, BranchScanAndIndex.class);
+	copsInwardobj = PageFactory.initElements(driver, Cops_Inward.class);
+	nbsDataEntry=PageFactory.initElements(driver, NBSDataEntry.class);
+	proposalEnquiry=PageFactory.initElements(driver, ProposalEnquiry.class);
+	copsQcObj = PageFactory.initElements(driver, CopsQC.class);
+	loginPage = PageFactory.initElements(driver, LoginPage.class);
+	nbsBranchInward = PageFactory.initElements(driver, NBSBranchInward.class);
+	dispatchMode=PageFactory.initElements(driver, DispatchMode.class);
+	applicationTracker = PageFactory.initElements(driver, ApplicationTracker.class);]]></codefragment>
+   </duplication>
+   <duplication lines="24" tokens="121">
+      <file line="706"
+            path="D:\Bhavishya\POC\Dpl_code _given _by sateesh\DPL_Automation\src\test\java\pageObjectClasses\NBSDataEntry.java"/>
+      <file line="729"
+            path="D:\Bhavishya\POC\Dpl_code _given _by sateesh\DPL_Automation\src\test\java\pageObjectClasses\NBSDataEntry.java"/>
+      <codefragment><![CDATA[	public void addFamily(String sheet,String lineNumbers) throws Exception {
+		ReadexcelFile.readExcel(sheet);
+		int lineNbr;
+		String [] lNumber;
+		if(lineNumbers.contains(",")) {
+			lNumber=lineNumbers.split(",");
+		}else {
+			lNumber=lineNumbers.split(" ");
+		}
+		for(String lnum:lNumber) {
+			//family details
+			lineNbr=Integer.parseInt(lnum);
+			ReusableFunctions.waitForVisible(driver, familyMember);
+			selectByDropdown_Excel(familyMember,lineNbr,0);
+			enterData_Excel(ageatOnset, lineNbr, 1);
+			selectByDropdown_Excel(healthStatus, lineNbr,2);
+			clickOnElement(addFamily);
+			ReusableFunctions.waitForVisible(driver, success_popup);
+			success_popup.click();// c
+
+		}
+	}
+
+	public void addPrevPolicy(String sheet,String lineNumbers) throws Exception {]]></codefragment>
+   </duplication>
+   <duplication lines="19" tokens="101">
+      <file line="58"
+            path="D:\Bhavishya\POC\Dpl_code _given _by sateesh\DPL_Automation\src\test\java\pageObjectClasses\CallVerfication.java"/>
+      <file line="86"
+            path="D:\Bhavishya\POC\Dpl_code _given _by sateesh\DPL_Automation\src\test\java\pageObjectClasses\UnderWriting.java"/>
+      <codefragment><![CDATA[		callVerfication.click();
+
+
+	}
+
+	public void searchwithproposalNo(String ProposalNo) throws Exception {
+		Thread.sleep(4000);
+		waitForVisible(driver,srchBox);
+		ReusableFunctions.enterText_old(srchBox, ProposalNo);
+		try {
+			waitForVisible(driver,driver.findElement(By.linkText(ProposalNo)));
+			driver.findElement(By.linkText(ProposalNo)).click();
+		}catch(Exception e){
+			System.out.println("ProposalNo - "+ProposalNo+ " not available in the list may be it is cliamed ");
+			Assert.fail("ProposalNo - "+ProposalNo+ " not available in the list may be it is cliamed");
+		}
+	}
+
+	public void PIVC(int lineNumber) throws Exception]]></codefragment>
+   </duplication>
+</pmd-cpd>

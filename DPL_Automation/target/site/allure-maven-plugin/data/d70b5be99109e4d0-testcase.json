@@ -1,0 +1,203 @@
+{
+  "uid" : "d70b5be99109e4d0",
+  "name" : "selectDispatch",
+  "title" : "DispatchMode bucket",
+  "time" : {
+    "start" : 1537449321747,
+    "stop" : 1537449357098,
+    "duration" : 35351
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 9
+  },
+  "failure" : {
+    "message" : "TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on XP (73b73c11f234dca1ee9b067f1c8fe42f)] -> xpath: /html/body/div[8]/p] (tried for 20 second(s) with 500 milliseconds interval)\nBuild info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'\nSystem info: host: 'MONO-HYD-LAP-14', ip: '10.50.101.80', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\\Users\\BHAVIS~1\\AppData\\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49426}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}\nSession ID: 73b73c11f234dca1ee9b067f1c8fe42f",
+    "stackTrace" : "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on XP (73b73c11f234dca1ee9b067f1c8fe42f)] -> xpath: /html/body/div[8]/p] (tried for 20 second(s) with 500 milliseconds interval)\nBuild info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'\nSystem info: host: 'MONO-HYD-LAP-14', ip: '10.50.101.80', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\\Users\\BHAVIS~1\\AppData\\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49426}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}\nSession ID: 73b73c11f234dca1ee9b067f1c8fe42f\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)\n\tat utilities.ReusableFunctions.waitTillElementToBeClickable(ReusableFunctions.java:206)\n\tat pageObjectClasses.DispatchMode.clickOnOK(DispatchMode.java:87)\n\tat Cosmos_Testcases.LATraditionalstppass.selectDispatch(LATraditionalstppass.java:127)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:659)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:771)\n\tat org.testng.TestRunner.run(TestRunner.java:621)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:357)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:259)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1124)\n\tat org.testng.TestNG.run(TestNG.java:1032)\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)\n\tat org.apache.maven.surefire.Surefire.run(Surefire.java:169)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)\n\tat org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)\n"
+  },
+  "description" : {
+    "value" : "Search with application number and submit",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "BROKEN",
+  "testId" : null,
+  "suite" : {
+    "uid" : "e9e455ec9ea5c9e1",
+    "name" : "Suite : TestLASTPPass",
+    "title" : "Suite : TestLASTPPass"
+  },
+  "steps" : [ {
+    "name" : "logStep[Mouser hovered on NBS]",
+    "title" : "Mouser hovered on NBS",
+    "time" : {
+      "start" : 1537449322819,
+      "stop" : 1537449322819,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Dispatch Mode  is selected ]",
+    "title" : "Dispatch Mode  is selected ",
+    "time" : {
+      "start" : 1537449323222,
+      "stop" : 1537449323222,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Selected option is : New Business]",
+    "title" : "Selected option is : New Business",
+    "time" : {
+      "start" : 1537449325456,
+      "stop" : 1537449325456,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Entered proposal num is : MNB9040120]",
+    "title" : "Entered proposal num is : MNB9040120",
+    "time" : {
+      "start" : 1537449327632,
+      "stop" : 1537449327632,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Selected option is : Scanning]",
+    "title" : "Selected option is : Scanning",
+    "time" : {
+      "start" : 1537449329979,
+      "stop" : 1537449329979,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Taking screenshot]",
+    "title" : "Taking screenshot",
+    "time" : {
+      "start" : 1537449329981,
+      "stop" : 1537449329981,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Click on Next button ]",
+    "title" : "Click on Next button ",
+    "time" : {
+      "start" : 1537449334495,
+      "stop" : 1537449334495,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Taking screenshot]",
+    "title" : "Taking screenshot",
+    "time" : {
+      "start" : 1537449334496,
+      "stop" : 1537449334496,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Clicked on Submit button]",
+    "title" : "Clicked on Submit button",
+    "time" : {
+      "start" : 1537449334791,
+      "stop" : 1537449334791,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ {
+    "title" : "Screenshot",
+    "source" : "0302c4e2-bfb7-4264-9955-b8c7b3020b7c-attachment.png",
+    "type" : "image/png",
+    "size" : 47076,
+    "uid" : "ad483dd8e36fcf85"
+  }, {
+    "title" : "Screenshot",
+    "source" : "6aee0d58-9b59-4651-b953-b9349305af48-attachment.png",
+    "type" : "image/png",
+    "size" : 48212,
+    "uid" : "49acf00727225892"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "LA Traditional Case (STP Pass)"
+  }, {
+    "name" : "host",
+    "value" : "MONO-HYD-LAP-14"
+  }, {
+    "name" : "thread",
+    "value" : "21916@MONO-HYD-LAP-14.main(1)"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : TestLASTPPass"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : TestLASTPPass"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  } ],
+  "parameters" : [ ]
+}

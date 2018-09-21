@@ -1,0 +1,288 @@
+{
+  "time" : {
+    "start" : 1537449225687,
+    "stop" : 1537449504647,
+    "duration" : 278960
+  },
+  "testSuites" : [ {
+    "uid" : "e9e455ec9ea5c9e1",
+    "name" : "Suite : TestLASTPPass",
+    "title" : "Suite : TestLASTPPass",
+    "time" : {
+      "start" : 1537449225687,
+      "stop" : 1537449357105,
+      "duration" : 131418
+    },
+    "statistic" : {
+      "total" : 10,
+      "passed" : 3,
+      "pending" : 0,
+      "canceled" : 6,
+      "failed" : 0,
+      "broken" : 1
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "9983651d904b3d30",
+      "name" : "selectNBSBranchInward",
+      "title" : "Select Branch Inword bucket and fill the data",
+      "time" : {
+        "start" : 1537449225687,
+        "stop" : 1537449271272,
+        "duration" : 45585
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "ccd79f67db4d3fb",
+      "name" : "submitReciept",
+      "title" : "Submit Receipt Bucket",
+      "time" : {
+        "start" : 1537449271277,
+        "stop" : 1537449302943,
+        "duration" : 31666
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "8f8535a1345f2efc",
+      "name" : "pendingBranchScrutny",
+      "title" : "Pending brach scrytny bucket",
+      "time" : {
+        "start" : 1537449302948,
+        "stop" : 1537449321746,
+        "duration" : 18798
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "d70b5be99109e4d0",
+      "name" : "selectDispatch",
+      "title" : "DispatchMode bucket",
+      "time" : {
+        "start" : 1537449321747,
+        "stop" : 1537449357098,
+        "duration" : 35351
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "30af773a906c073b",
+      "name" : "scanAndIndex",
+      "title" : "Scan and Index bucket",
+      "time" : {
+        "start" : 1537449357099,
+        "stop" : 1537449357101,
+        "duration" : 2
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "46ff491cdbcd4f",
+      "name" : "copsInwardBucket",
+      "title" : "Cops inward bucket",
+      "time" : {
+        "start" : 1537449357101,
+        "stop" : 1537449357102,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "de20666395832cb1",
+      "name" : "nbsDataEntry",
+      "title" : "NBS data entry bucket",
+      "time" : {
+        "start" : 1537449357102,
+        "stop" : 1537449357103,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "98dcca7298561348",
+      "name" : "copsQc",
+      "title" : "CopsQC bucket",
+      "time" : {
+        "start" : 1537449357103,
+        "stop" : 1537449357104,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "fd02044c4c2ebe4e",
+      "name" : "applicationTracker",
+      "title" : "Application Tracker bucket ",
+      "time" : {
+        "start" : 1537449357104,
+        "stop" : 1537449357105,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "3bf0102c513f1e5d",
+      "name" : "proposalEnquiry",
+      "title" : "Proposal enquiry and Receipt details bucket",
+      "time" : {
+        "start" : 1537449357105,
+        "stop" : 1537449357105,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    } ]
+  }, {
+    "uid" : "ac150cee6e165958",
+    "name" : "Suite : TestLATOIL",
+    "title" : "Suite : TestLATOIL",
+    "time" : {
+      "start" : 1537449357974,
+      "stop" : 1537449504647,
+      "duration" : 146673
+    },
+    "statistic" : {
+      "total" : 12,
+      "passed" : 0,
+      "pending" : 1,
+      "canceled" : 10,
+      "failed" : 0,
+      "broken" : 1
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "61ea4b262c86cb44",
+      "name" : "callVerificationBucket",
+      "title" : "Call Verification bucket ",
+      "time" : {
+        "start" : 1537449357974,
+        "stop" : 1537449357975,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "PENDING"
+    }, {
+      "uid" : "399bd507d40be7cc",
+      "name" : "selectNBSBranchInward",
+      "title" : "Select Branch Inword bucket and fill the data",
+      "time" : {
+        "start" : 1537449382425,
+        "stop" : 1537449504633,
+        "duration" : 122208
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "5f369bfef992acb9",
+      "name" : "submitReciept",
+      "title" : "Submit Receipt Bucket",
+      "time" : {
+        "start" : 1537449504635,
+        "stop" : 1537449504636,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "bb91f18c950ca438",
+      "name" : "pendingBranchScrutny",
+      "title" : "Pending brach scrytny bucket",
+      "time" : {
+        "start" : 1537449504637,
+        "stop" : 1537449504637,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "3a78f79edb9e1cc4",
+      "name" : "selectDispatch",
+      "title" : "DispatchMode bucket",
+      "time" : {
+        "start" : 1537449504638,
+        "stop" : 1537449504638,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "f929e7a23dff324f",
+      "name" : "scanAndIndex",
+      "title" : "Scan and Index bucket",
+      "time" : {
+        "start" : 1537449504639,
+        "stop" : 1537449504639,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "1f46ea9621a2a5b3",
+      "name" : "copsInwardBucket",
+      "title" : "Cops inward bucket",
+      "time" : {
+        "start" : 1537449504640,
+        "stop" : 1537449504641,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "994b672e39ceb3c4",
+      "name" : "nbsDataEntry",
+      "title" : "NBS data entry bucket",
+      "time" : {
+        "start" : 1537449504642,
+        "stop" : 1537449504642,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "ee51b785f3085ab0",
+      "name" : "copsQc",
+      "title" : "CopsQC bucket",
+      "time" : {
+        "start" : 1537449504643,
+        "stop" : 1537449504643,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "fbe8818189f6baf1",
+      "name" : "UWBucket",
+      "title" : "UW bucket",
+      "time" : {
+        "start" : 1537449504644,
+        "stop" : 1537449504644,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "b3ee12a85d4b7e31",
+      "name" : "applicationTracker",
+      "title" : "Application Tracker bucket ",
+      "time" : {
+        "start" : 1537449504645,
+        "stop" : 1537449504646,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "cdbacb8d4833c76a",
+      "name" : "proposalEnquiry",
+      "title" : "Proposal enquiry and Receipt details bucket",
+      "time" : {
+        "start" : 1537449504646,
+        "stop" : 1537449504647,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    } ]
+  } ]
+}

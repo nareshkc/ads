@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <test name="TestLASTPPass(failed)">
+    <classes>
+      <class name="Cosmos_Testcases.LACosmosToIL">
+        <methods>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Cosmos_Testcases.LACosmosToIL -->
+      <class name="Cosmos_Testcases.LATraditionalstppass">
+        <methods>
+          <include name="pendingBranchScrutny"/>
+          <include name="copsQc"/>
+          <include name="proposalEnquiry"/>
+          <include name="scanAndIndex"/>
+          <include name="copsInwardBucket"/>
+          <include name="selectNBSBranchInward"/>
+          <include name="selectDispatch"/>
+          <include name="applicationTracker"/>
+          <include name="beforeTest"/>
+          <include name="submitReciept"/>
+          <include name="nbsDataEntry"/>
+          <include name="aftermethod"/>
+        </methods>
+      </class> <!-- Cosmos_Testcases.LATraditionalstppass -->
+    </classes>
+  </test> <!-- TestLASTPPass(failed) -->
+  <test name="TestLATOIL(failed)">
+    <classes>
+      <class name="Cosmos_Testcases.LACosmosToIL">
+        <methods>
+          <include name="copsQc"/>
+          <include name="proposalEnquiry"/>
+          <include name="submitReciept"/>
+          <include name="applicationTracker"/>
+          <include name="pendingBranchScrutny"/>
+          <include name="scanAndIndex"/>
+          <include name="beforeTest"/>
+          <include name="selectDispatch"/>
+          <include name="selectNBSBranchInward"/>
+          <include name="UWBucket"/>
+          <include name="copsInwardBucket"/>
+          <include name="nbsDataEntry"/>
+        </methods>
+      </class> <!-- Cosmos_Testcases.LACosmosToIL -->
+      <class name="Cosmos_Testcases.LATraditionalstppass">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="aftermethod"/>
+        </methods>
+      </class> <!-- Cosmos_Testcases.LATraditionalstppass -->
+    </classes>
+  </test> <!-- TestLATOIL(failed) -->
+</suite> <!-- Failed suite [Suite] -->

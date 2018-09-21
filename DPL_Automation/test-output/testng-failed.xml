@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="TestLASTPPass(failed)">
+    <classes>
+      <class name="Cosmos_Testcases.LATraditionalstppass">
+        <methods>
+          <include name="pendingBranchScrutny"/>
+          <include name="copsQc"/>
+          <include name="proposalEnquiry"/>
+          <include name="scanAndIndex"/>
+          <include name="copsInwardBucket"/>
+          <include name="selectNBSBranchInward"/>
+          <include name="selectDispatch"/>
+          <include name="applicationTracker"/>
+          <include name="beforeTest"/>
+          <include name="submitReciept"/>
+          <include name="nbsDataEntry"/>
+          <include name="aftermethod"/>
+        </methods>
+      </class> <!-- Cosmos_Testcases.LATraditionalstppass -->
+    </classes>
+  </test> <!-- TestLASTPPass(failed) -->
+  <test thread-count="5" name="TestLATOIL(failed)">
+    <classes>
+      <class name="Cosmos_Testcases.LACosmosToIL">
+        <methods>
+          <include name="applicationTracker"/>
+          <include name="pendingBranchScrutny"/>
+          <include name="beforeTest"/>
+          <include name="selectNBSBranchInward"/>
+          <include name="copsInwardBucket"/>
+          <include name="nbsDataEntry"/>
+          <include name="copsQc"/>
+          <include name="proposalEnquiry"/>
+          <include name="submitReciept"/>
+          <include name="scanAndIndex"/>
+          <include name="selectDispatch"/>
+          <include name="UWBucket"/>
+          <include name="aftermethod"/>
+        </methods>
+      </class> <!-- Cosmos_Testcases.LACosmosToIL -->
+    </classes>
+  </test> <!-- TestLATOIL(failed) -->
+</suite> <!-- Failed suite [Suite] -->

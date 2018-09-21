@@ -1,0 +1,58 @@
+{
+  "hash" : "f0f9583e3b2974a632a09536fa6cd0de93829600",
+  "data" : [ {
+    "name" : "defects",
+    "type" : "DEFECTS",
+    "data" : [ {
+      "count" : 1,
+      "message" : "TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on XP (73b73c11f234dca1ee9b067f1c8fe42f)] -> xpath: /html/body/div[8]/p] (tried for 20 second(s) with 500 milliseconds interval)\nBuild info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'\nSystem info: host: 'MONO-HYD-LAP-14', ip: '10.50.101.80', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\\Users\\BHAVIS~1\\AppData\\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49426}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}\nSession ID: 73b73c11f234dca1ee9b067f1c8fe42f",
+      "status" : "BROKEN"
+    }, {
+      "count" : 1,
+      "message" : "TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: inputName' (tried for 40 second(s) with 500 milliseconds interval)",
+      "status" : "BROKEN"
+    } ]
+  }, {
+    "name" : "xunit",
+    "type" : "TITLE_STATISTICS",
+    "data" : [ {
+      "title" : "Suite : TestLASTPPass",
+      "statistic" : {
+        "total" : 10,
+        "passed" : 3,
+        "pending" : 0,
+        "canceled" : 6,
+        "failed" : 0,
+        "broken" : 1
+      }
+    }, {
+      "title" : "Suite : TestLATOIL",
+      "statistic" : {
+        "total" : 12,
+        "passed" : 0,
+        "pending" : 1,
+        "canceled" : 10,
+        "failed" : 0,
+        "broken" : 1
+      }
+    } ]
+  }, {
+    "name" : "behaviors",
+    "type" : "TITLE_STATISTICS",
+    "data" : [ {
+      "title" : "Without feature",
+      "statistic" : {
+        "total" : 22,
+        "passed" : 3,
+        "pending" : 1,
+        "canceled" : 16,
+        "failed" : 0,
+        "broken" : 2
+      }
+    } ]
+  }, {
+    "name" : "environment",
+    "type" : "KEY_VALUE",
+    "data" : [ ]
+  } ]
+}

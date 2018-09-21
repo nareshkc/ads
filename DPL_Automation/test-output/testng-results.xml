@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="12" passed="11">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="1072746" started-at="2018-09-20T11:46:13Z" finished-at="2018-09-20T12:04:06Z">
+    <groups>
+    </groups>
+    <test name="TestLATOIL" duration-ms="1072746" started-at="2018-09-20T11:46:13Z" finished-at="2018-09-20T12:04:06Z">
+      <class name="Cosmos_Testcases.LACosmosToIL">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Cosmos_Testcases.LACosmosToIL@6003220a]" name="beforeTest" is-config="true" duration-ms="7766" started-at="2018-09-20T11:46:13Z" finished-at="2018-09-20T11:46:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="selectNBSBranchInward()[pri:1, instance:Cosmos_Testcases.LACosmosToIL@6003220a]" name="selectNBSBranchInward" duration-ms="55701" started-at="2018-09-20T11:46:21Z" finished-at="2018-09-20T11:47:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectNBSBranchInward -->
+        <test-method status="PASS" signature="submitReciept()[pri:2, instance:Cosmos_Testcases.LACosmosToIL@6003220a]" name="submitReciept" duration-ms="35970" started-at="2018-09-20T11:47:17Z" depends-on-methods="Cosmos_Testcases.LACosmosToIL.selectNBSBranchInward" finished-at="2018-09-20T11:47:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitReciept -->
+        <test-method status="PASS" signature="pendingBranchScrutny()[pri:3, instance:Cosmos_Testcases.LACosmosToIL@6003220a]" name="pendingBranchScrutny" duration-ms="19964" started-at="2018-09-20T11:47:53Z" depends-on-methods="Cosmos_Testcases.LACosmosToIL.submitReciept" finished-at="2018-09-20T11:48:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pendingBranchScrutny -->
+        <test-method status="PASS" signature="selectDispatch()[pri:4, instance:Cosmos_Testcases.LACosmosToIL@6003220a]" name="selectDispatch" duration-ms="18912" started-at="2018-09-20T11:48:13Z" depends-on-methods="Cosmos_Testcases.LACosmosToIL.pendingBranchScrutny" finished-at="2018-09-20T11:48:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectDispatch -->
+        <test-method status="PASS" signature="scanAndIndex()[pri:5, instance:Cosmos_Testcases.LACosmosToIL@6003220a]" name="scanAndIndex" duration-ms="38843" started-at="2018-09-20T11:48:31Z" depends-on-methods="Cosmos_Testcases.LACosmosToIL.selectDispatch" finished-at="2018-09-20T11:49:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scanAndIndex -->
+        <test-method status="PASS" signature="copsInwardBucket()[pri:6, instance:Cosmos_Testcases.LACosmosToIL@6003220a]" name="copsInwardBucket" duration-ms="22492" started-at="2018-09-20T11:49:10Z" depends-on-methods="Cosmos_Testcases.LACosmosToIL.scanAndIndex" finished-at="2018-09-20T11:49:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- copsInwardBucket -->
+        <test-method status="PASS" signature="nbsDataEntry()[pri:7, instance:Cosmos_Testcases.LACosmosToIL@6003220a]" name="nbsDataEntry" duration-ms="233562" started-at="2018-09-20T11:49:33Z" depends-on-methods="Cosmos_Testcases.LACosmosToIL.copsInwardBucket" finished-at="2018-09-20T11:53:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nbsDataEntry -->
+        <test-method status="PASS" signature="copsQc()[pri:8, instance:Cosmos_Testcases.LACosmosToIL@6003220a]" name="copsQc" duration-ms="421876" started-at="2018-09-20T11:53:26Z" depends-on-methods="Cosmos_Testcases.LACosmosToIL.nbsDataEntry" finished-at="2018-09-20T12:00:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- copsQc -->
+        <test-method status="PASS" signature="UWBucket()[pri:10, instance:Cosmos_Testcases.LACosmosToIL@6003220a]" name="UWBucket" duration-ms="171242" started-at="2018-09-20T12:00:28Z" depends-on-methods="Cosmos_Testcases.LACosmosToIL.copsQc" finished-at="2018-09-20T12:03:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UWBucket -->
+        <test-method status="PASS" signature="applicationTracker()[pri:11, instance:Cosmos_Testcases.LACosmosToIL@6003220a]" name="applicationTracker" duration-ms="12548" started-at="2018-09-20T12:03:19Z" depends-on-methods="Cosmos_Testcases.LACosmosToIL.UWBucket" finished-at="2018-09-20T12:03:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applicationTracker -->
+        <test-method status="PASS" signature="proposalEnquiry()[pri:12, instance:Cosmos_Testcases.LACosmosToIL@6003220a]" name="proposalEnquiry" duration-ms="32854" started-at="2018-09-20T12:03:32Z" depends-on-methods="Cosmos_Testcases.LACosmosToIL.applicationTracker" finished-at="2018-09-20T12:04:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proposalEnquiry -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:Cosmos_Testcases.LACosmosToIL@6003220a]" name="aftermethod" is-config="true" duration-ms="832" started-at="2018-09-20T12:04:05Z" finished-at="2018-09-20T12:04:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+      </class> <!-- Cosmos_Testcases.LACosmosToIL -->
+    </test> <!-- TestLATOIL -->
+  </suite> <!-- Suite -->
+</testng-results>
