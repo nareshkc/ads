@@ -106,7 +106,11 @@ public class Function {
 				FileUtils.copyFile(sourceFile, destinationFile);
 
 			}
+<<<<<<< HEAD
 			ChangeAllure.changeJson("widgets",3);
+=======
+			ChangeAllure.changeJson("summary",3);
+>>>>>>> b7477953b5dfa5ed32da7a4b1875938a870506c0
 		}
 	
 
