@@ -16,10 +16,7 @@ public class ChangeAllure {
 	public static int totaljson;
 	public static String  finalJson;
 	static public JSONParser parser = new JSONParser();
-<<<<<<< HEAD
-=======
 public static String widgets =null;
->>>>>>> b7477953b5dfa5ed32da7a4b1875938a870506c0
 
 
 	@SuppressWarnings("unchecked")
@@ -29,49 +26,27 @@ public static String widgets =null;
 
 		try
 		{
-<<<<<<< HEAD
-			String FilePath=execute.widgets+JsonName+".json";
-=======
 			String FilePath= execute.widgets+JsonName+".json";
 					//execute.widgets+JsonName+".json";
->>>>>>> b7477953b5dfa5ed32da7a4b1875938a870506c0
 			Object object = parser
 					.parse(new FileReader(FilePath));
 			JSONObject jsonObject=null;
 			JSONArray jsonArray = null;
-<<<<<<< HEAD
-
-			for(int i=1;i<=changeCount;i++) {
-				jsonObject = (JSONObject)object;
-				if(JsonName.equals("widgets")) {
-					//jsonObject=(JSONObject)jsonObject.get("summary");
-					if(execute.changeReport.equals("iOS_ARMS_Automation") ||execute.changeReport.equals("iOS_CustomParams_Automation")) {
-						jsonObject=(JSONObject)jsonObject.get("summary");
-=======
 			System.out.println("execute.changeReport is "+execute.changeReport);
 			
 			for(int i=1;i<=changeCount;i++) {
 				jsonObject = (JSONObject)object;
-				if(execute.changeReport.equals("iOS_ARMS_Automation") ||execute.changeReport.equals("iOS_CustomParams_Automation")) {
+				if(execute.changeReport.equals("iOS_ARMS_Automation") ||execute.changeReport.equals("iOS_Regression_Automation")) {
 					if(JsonName.equals("summary")) {
 						//jsonObject=(JSONObject)jsonObject.get("summary");
 
 						//jsonObject=(JSONObject)jsonObject.get("summary");
->>>>>>> b7477953b5dfa5ed32da7a4b1875938a870506c0
 						jsonObject.put("reportName", execute.changeReport+"_Report");
 						finalJson=object.toString();
 						@SuppressWarnings("resource")
 						FileWriter FW = new FileWriter(FilePath);
 						FW.write(object.toString());
 						FW.flush();
-<<<<<<< HEAD
-					}else if(execute.changeReport.equals("iOS_Smoke_Automation")) {
-
-
-
-						if(i==1) {
-							jsonObject=(JSONObject)jsonObject.get("summary");
-=======
 
 					}
 				}else if(execute.changeReport.equals("iOS_Smoke_Automation")) {
@@ -80,7 +55,6 @@ public static String widgets =null;
 
 						if(i==1) {
 							//jsonObject=(JSONObject)jsonObject.get("summary");
->>>>>>> b7477953b5dfa5ed32da7a4b1875938a870506c0
 							jsonObject.put("reportName", execute.changeReport+"_Report");
 						}else if(i==2) {
 							jsonObject=(JSONObject)jsonObject.get("behaviors");
@@ -91,40 +65,6 @@ public static String widgets =null;
 							jsonArray=(JSONArray)jsonObject.get("items");
 							jsonObject=(JSONObject) jsonArray.get(0);
 						}
-<<<<<<< HEAD
-					}
-				}else if(JsonName.equals("xunit")) {
-					jsonArray=(JSONArray)jsonObject.get("testSuites");
-					jsonObject=(JSONObject) jsonArray.get(0);
-				}
-
-				jsonObject=(JSONObject)jsonObject.get("statistic");
-				String broken = jsonObject.get("broken").toString();
-				String skipped = jsonObject.get("skipped").toString();
-				String unknown = jsonObject.get("unknown").toString();
-				String total = jsonObject.get("total").toString();
-				System.out.println("broken tests are : "+broken );
-				broke=Integer.parseInt(broken);
-				System.out.println("skipped tests are : "+skipped );
-				skip=Integer.parseInt(skipped);
-				System.out.println("broken tests are : "+unknown );
-				other=Integer.parseInt(unknown);
-				totaljson =Integer.parseInt(total);
-				cancled=broke+skip+other;
-				totaljson=totaljson-cancled;
-				jsonObject.put("broken", broke-broke);
-				jsonObject.put("skip", skip-skip);
-				jsonObject.put("unknown", other-other);
-				jsonObject.put("total", totaljson);
-				finalJson=object.toString();
-				@SuppressWarnings("resource")
-				FileWriter FW = new FileWriter(FilePath);
-				FW.write(object.toString());
-				FW.flush();
-
-			}
-
-=======
 
 					}else if(JsonName.equals("xunit")) {
 						jsonArray=(JSONArray)jsonObject.get("testSuites");
@@ -157,7 +97,6 @@ public static String widgets =null;
 
 				}
 			}
->>>>>>> b7477953b5dfa5ed32da7a4b1875938a870506c0
 		}catch(Exception e) {
 
 		}
@@ -166,12 +105,8 @@ public static String widgets =null;
 	public static void main(String[] args) {
 
 		// TODO Auto-generated method stub
-<<<<<<< HEAD
-		changeJson("widgets",3);
-=======
-		 widgets="/Users/macmini/.jenkins/jobs/iOS_CustomParams_Automation/builds/116/archive/allure-report/widgets/";
+		 widgets="/Users/macmini/.jenkins/jobs/iOS_Regression_Automation/builds/116/archive/allure-report/widgets/";
 		changeJson("summary",3);
->>>>>>> b7477953b5dfa5ed32da7a4b1875938a870506c0
 		//changeJson("xunit",1);
 	}
 

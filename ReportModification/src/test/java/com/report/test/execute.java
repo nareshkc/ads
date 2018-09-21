@@ -42,11 +42,7 @@ public class execute {
 		System.out.println("Execution on Build : "+Function.BuildNo);
 		Function.destDir= "/Users/macmini/.jenkins/jobs/"+Function.ProjectName+"/builds/"+Function.BuildNo+"/archive/";
 		String zipFilePath="/Users/macmini/.jenkins/jobs/"+Function.ProjectName+"/builds/"+Function.BuildNo+"/archive/allure-report.zip";
-<<<<<<< HEAD
-		widgets="/Users/macmini/.jenkins/jobs/"+changeReport+"/builds/"+Function.BuildNo+"/archive/allure-report/data/";
-=======
 		widgets="/Users/macmini/.jenkins/jobs/"+changeReport+"/builds/"+Function.BuildNo+"/archive/allure-report/widgets/";
->>>>>>> b7477953b5dfa5ed32da7a4b1875938a870506c0
 		driver.close();
 		Function.zipfolder("unzip");
 		Function.move_Files("Allure_Style");
@@ -56,7 +52,7 @@ public class execute {
 	}
 	@BeforeClass
 	public void beforeClass() {
-		System.out.println("***=======Report Execution Started======***");
+		System.out.println("Report Execution Started");
 		
 
 	}
