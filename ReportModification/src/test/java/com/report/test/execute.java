@@ -56,7 +56,7 @@ public class execute {
 	}
 	@BeforeClass
 	public void beforeClass() {
-		System.out.println("========Report Execution Started=========");
+		System.out.println("*********Report Execution Started**************");
 		
 
 	}
